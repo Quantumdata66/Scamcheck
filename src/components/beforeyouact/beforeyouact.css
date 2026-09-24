@@ -1,0 +1,98 @@
+.before-you-act {
+  background-color: #f7f6f2;
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.act-intro {
+  flex: 1;
+  max-width: 400px;
+}
+
+.act-intro h4 {
+  color: #64748b;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.act-intro h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.act-intro p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.act-cards {
+  flex: 1.3;
+  display: flex;
+  gap: 20px;
+}
+
+.act-card {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px 24px;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.act-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.act-card p {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .before-you-act {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .act-intro {
+    max-width: 100%;
+  }
+
+  .act-intro h2 {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .act-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .act-card {
+    padding: 20px;
+  }
+}
