@@ -1,0 +1,108 @@
+.howitworks {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 50px;
+  background-color: white;
+  padding: 80px 7%;
+}
+
+.howitworks .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.howitworks .text h5 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #888;
+  margin: 0 0 18px;
+}
+
+.howitworks .text h3 {
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0 0 22px;
+  max-width: 450px;
+}
+
+.howitworks .text p {
+  max-width: 420px;
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.howitworks .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  align-self: center;
+}
+
+.howitworks .cards .card {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #e1e0da;
+  border-radius: 7px;
+  padding: 22px;
+}
+
+.howitworks .cards .card h5 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #aaa;
+  margin: 0 0 15px;
+}
+
+.howitworks .cards .card h4 {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+.howitworks .cards .card p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .howitworks {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 5%;
+  }
+
+  .howitworks .text h3,
+  .howitworks .text p {
+    max-width: 100%;
+  }
+
+  .howitworks .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .howitworks .cards .card {
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .howitworks {
+    padding: 40px 24px;
+  }
+
+  .howitworks .text h3 {
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+
+  .howitworks .cards {
+    grid-template-columns: 1fr;
+  }
+}

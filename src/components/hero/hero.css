@@ -1,0 +1,137 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-block-start: 100px;
+}
+
+.hero .note {
+  font-size: 12px;
+  margin-block-start: 7px;
+  font-weight: 600;
+  color: #666;
+}
+
+.hero .intro h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: -20px;
+}
+
+.hero .intro h1 {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 25px;
+}
+
+.hero .intro p {
+  font-size: 16px;
+  inline-size: 450px;
+  margin: 0 auto 24px;
+  color: #666;
+}
+
+.hero .input-field {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted #deddd7;
+  background-color: white;
+  inline-size: 720px;
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0);
+}
+
+.hero .input-field textarea {
+  border: 1px solid #66666669;
+  border-radius: 9px;
+  padding: 10px;
+  background-color: white;
+  height: 100px;
+}
+
+.hero .input-field .below-input {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .input-field .below-input h5 {
+  background-color: white;
+  font-weight: 600;
+  color: #666;
+}
+
+.hero .input-field .below-input button {
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  padding: 11px 29px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .hero .intro h1 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero .intro p {
+    inline-size: 100%;
+    max-inline-size: 450px;
+  }
+
+  .hero .input-field {
+    inline-size: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-block-start: 90px;
+  }
+
+  .hero .intro h4 {
+    font-size: 13px;
+  }
+
+  .hero .intro h1 {
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+  }
+
+  .hero .intro p {
+    font-size: 14px;
+  }
+
+  .hero .input-field {
+    padding: 10px;
+  }
+
+  .hero .input-field textarea {
+    height: 120px;
+  }
+
+  .hero .input-field .below-input {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .hero .input-field .below-input h5 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .hero .input-field .below-input button {
+    width: 100%;
+  }
+}

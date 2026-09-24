@@ -1,0 +1,138 @@
+.result {
+  background-color: #121316;
+  color: #ffffff;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.result-intro {
+  flex: 1;
+  max-width: 400px;
+}
+
+.result-intro h4 {
+  color: #9ea3ae;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.result-intro h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.result-intro p {
+  color: #9ea3ae;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.result-card {
+  flex: 1.3;
+  background-color: #1a1c23;
+  border: 1px solid #2d313e;
+  border-radius: 16px;
+  padding: 36px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #fef3c7;
+  color: #78350f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.result-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.card-description {
+  color: #9ea3ae;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #2d313e;
+  margin-bottom: 28px;
+}
+
+.result-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.details-column h5 {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.details-column ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.details-column li {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.details-column li::marker {
+  color: #9ea3ae;
+}
+
+@media (max-width: 900px) {
+  .result {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .result-intro {
+    max-width: 100%;
+  }
+
+  .result-intro h2 {
+    font-size: 1.85rem;
+  }
+
+  .result-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .result-details {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .result-card h3 {
+    font-size: 1.25rem;
+  }
+}
