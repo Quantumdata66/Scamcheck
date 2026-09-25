@@ -1,0 +1,1 @@
+"""ScamCheck Backend Application Package."""

@@ -42,15 +42,33 @@
   inline-size: 720px;
   border-radius: 18px;
   padding: 12px;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.03);
 }
 
 .hero .input-field textarea {
   border: 1px solid #66666669;
   border-radius: 9px;
-  padding: 10px;
+  padding: 12px;
   background-color: white;
-  height: 100px;
+  height: 120px;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.hero .input-field textarea:disabled {
+  background-color: #f8fafc;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.hero-error-text {
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 6px;
+  padding-left: 4px;
 }
 
 .hero .input-field .below-input {
@@ -58,21 +76,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 8px;
 }
 
 .hero .input-field .below-input h5 {
   background-color: white;
   font-weight: 600;
   color: #666;
+  margin: 0;
+  font-size: 12px;
 }
 
 .hero .input-field .below-input button {
   border: none;
   border-radius: 8px;
-  background-color: black;
+  background-color: #0f172a;
   color: white;
   padding: 11px 29px;
   font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.hero .input-field .below-input button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.hero .input-field .below-input button.btn-loading {
+  background-color: #334155;
+  cursor: wait;
 }
 
 @media (max-width: 768px) {
