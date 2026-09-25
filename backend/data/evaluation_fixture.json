@@ -1,0 +1,307 @@
+[
+  {
+    "id": "BENIGN_001",
+    "text": "Hi Mom, just wanted to check if you got the family dinner photos I sent over WhatsApp.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Benign everyday conversation mentioning WhatsApp."
+  },
+  {
+    "id": "BENIGN_002",
+    "text": "Your Chase verification code is 849201. We will NEVER call or ask for this code. Do not share it with anyone.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate 2FA security alert containing OTP terms with explicit negation guard."
+  },
+  {
+    "id": "BENIGN_003",
+    "text": "Your electric bill of $64.20 was automatically debited from your checking account on Oct 12. Thank you for using auto-pay.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate debit/bill confirmation without panic or dispute prompts."
+  },
+  {
+    "id": "BENIGN_004",
+    "text": "Stripe is looking for a Senior Frontend Engineer ($150,000 - $180,000/year). 5+ years experience required. Apply at stripe.com/careers.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate corporate job posting with annual salary and standard qualifications."
+  },
+  {
+    "id": "BENIGN_005",
+    "text": "Hi Alex, I saw your React profile on GitHub and would love to chat about an open Staff Developer role at Acme Corp. Let me know if you are open to an introductory call.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate recruiter outreach with professional context."
+  },
+  {
+    "id": "BENIGN_006",
+    "text": "Vanguard Index Funds quarterly summary: Past market performance is no guarantee of future returns. Please read the prospectus before making investment decisions.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate financial market discussion containing standard regulatory disclaimer."
+  },
+  {
+    "id": "BENIGN_007",
+    "text": "Your monthly 401k employer contribution of $250 has been deposited to your Fidelity retirement portfolio.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate employer retirement portfolio deposit notice."
+  },
+  {
+    "id": "BENIGN_008",
+    "text": "Dear Customer, thank you for contacting our customer service department. Your support ticket #89412 has been resolved.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate customer service acknowledgment with generic greeting."
+  },
+  {
+    "id": "BENIGN_009",
+    "text": "The World Bank and IMF published a joint report today regarding global job market investments and economic growth.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "synthetic-adversarial",
+    "notes": "News summary containing bank, job, and investment keywords in academic context."
+  },
+  {
+    "id": "BENIGN_010",
+    "text": "For full API documentation and integration guides, please visit our developer portal at https://developer.acme.com/docs.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Legitimate technical documentation link without urgency or scam context."
+  },
+  {
+    "id": "BENIGN_011",
+    "text": "Fraud Prevention Notice: Scammers often pretend to be your bank and ask for your PIN or password. Remember that our bank will never ask for your confidential credentials.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "synthetic-adversarial",
+    "notes": "Educational awareness message explaining scam tactics without being a scam."
+  },
+  {
+    "id": "BENIGN_012",
+    "text": "Hey team, the project status meeting is moved to 3 PM in Conference Room B. See you all there.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "team-curated",
+    "notes": "Clean internal workplace communication."
+  },
+
+  {
+    "id": "SCAM_BANK_001",
+    "text": "URGENT: Your Wells Fargo account has been suspended due to unauthorized access. Reply with your OTP code immediately within 12 hours to verify your identity.",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "team-curated",
+    "notes": "Classic smishing with urgent account lockout threat and direct OTP harvesting."
+  },
+  {
+    "id": "SCAM_BANK_002",
+    "text": "Security Alert: A payment of $899.99 to Best Buy was approved on your debit card. If this was not you, call our fraud department immediately at 1-800-555-0199.",
+    "expected_label": "needs_verification",
+    "expected_category": "bank_payment",
+    "source_type": "team-curated",
+    "notes": "Fake transaction debit alert prompting urgent dispute reaction."
+  },
+  {
+    "id": "SCAM_BANK_003",
+    "text": "Your bank card has been blocked. Transfer your remaining funds to our safe holding account to protect them while under investigation.",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "team-curated",
+    "notes": "Safe account money redirection scheme."
+  },
+  {
+    "id": "SCAM_BANK_004",
+    "text": "Action required: To avoid tax penalties, you must pay your overdue bank fee using Google Play gift cards immediately.",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "team-curated",
+    "notes": "Gift card payment redirection scheme."
+  },
+
+  {
+    "id": "SCAM_JOB_001",
+    "text": "Congratulations! You have been selected for our online assistant job. Earn $600/day working 1 hour from home on your phone. No experience needed. Contact our HR on WhatsApp: wa.me/123456",
+    "expected_label": "high",
+    "expected_category": "fake_job",
+    "source_type": "team-curated",
+    "notes": "High pay, immediate hire claim, remote phone work, and WhatsApp redirection."
+  },
+  {
+    "id": "SCAM_JOB_002",
+    "text": "Welcome to the team! Before your home equipment kit can be shipped, you must pay an upfront registration fee of $85 via wire transfer.",
+    "expected_label": "high",
+    "expected_category": "fake_job",
+    "source_type": "team-curated",
+    "notes": "Upfront onboarding equipment fee scam."
+  },
+  {
+    "id": "SCAM_JOB_003",
+    "text": "Earn passive income online! Like 5 YouTube videos to earn $50 commission. Deposit funds to unlock higher level task rebates.",
+    "expected_label": "needs_verification",
+    "expected_category": "fake_job",
+    "source_type": "team-curated",
+    "notes": "Task-based rebate/deposit scheme."
+  },
+  {
+    "id": "SCAM_JOB_004",
+    "text": "We have reviewed your resume and you are hired for the Data Entry position. Message @JobRecruiter on Telegram to receive your contract.",
+    "expected_label": "needs_verification",
+    "expected_category": "fake_job",
+    "source_type": "team-curated",
+    "notes": "Immediate hire with Telegram channel hopping."
+  },
+
+  {
+    "id": "SCAM_INV_001",
+    "text": "Double your Bitcoin in 24 hours! 100% guaranteed profit with zero risk trading. Deposit BTC now to start earning daily returns.",
+    "expected_label": "high",
+    "expected_category": "investment",
+    "source_type": "team-curated",
+    "notes": "Guaranteed profit claim and doubling money crypto scheme."
+  },
+  {
+    "id": "SCAM_INV_002",
+    "text": "Exclusive crypto investment opportunity! Only 2 spots left in our VIP liquidity pool closing in 30 minutes. Act now!",
+    "expected_label": "needs_verification",
+    "expected_category": "investment",
+    "source_type": "team-curated",
+    "notes": "FOMO urgency and limited-spot investment pool."
+  },
+  {
+    "id": "SCAM_INV_003",
+    "text": "Deposit USDT into our automated AI crypto trading bot platform to generate 5% passive daily income automatically.",
+    "expected_label": "needs_verification",
+    "expected_category": "investment",
+    "source_type": "team-curated",
+    "notes": "Crypto deposit into automated trading bot."
+  },
+  {
+    "id": "SCAM_INV_004",
+    "text": "Join our VIP Telegram group where our top crypto guru provides 99% accuracy insider trading signals and manages your portfolio.",
+    "expected_label": "needs_verification",
+    "expected_category": "investment",
+    "source_type": "team-curated",
+    "notes": "Insider signals guru and portfolio management claim."
+  },
+
+  {
+    "id": "ADVERSARIAL_SYNONYM_001",
+    "text": "Kindly convey the 6-digit passcode sent to your handset so that we can reactivate your restricted banking profile without delay.",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests synonym phrasing: 'convey passcode to handset' instead of 'reply with OTP', 'without delay' instead of 'urgent'."
+  },
+  {
+    "id": "ADVERSARIAL_SYNONYM_002",
+    "text": "Acquire immense remuneration of 500 USD each morning by completing uncomplicated phone evaluations with nil prerequisites.",
+    "expected_label": "needs_verification",
+    "expected_category": "fake_job",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests archaic/uncommon synonyms: 'immense remuneration', 'uncomplicated phone evaluations', 'nil prerequisites'."
+  },
+  {
+    "id": "ADVERSARIAL_SYNONYM_003",
+    "text": "Assured financial yield of 200% on all digital currency allocations. Zero hazard guaranteed capital gain.",
+    "expected_label": "high",
+    "expected_category": "investment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests investment synonyms: 'financial yield', 'digital currency allocations', 'zero hazard capital gain'."
+  },
+
+  {
+    "id": "ADVERSARIAL_OBFUSCATION_001",
+    "text": "URGENT: Your account is locked! Send your p-a-s-s-w-0-r-d and 0TP to unlock immediately.",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests hyphenated and leetspeak credential obfuscation ('p-a-s-s-w-0-r-d', '0TP')."
+  },
+  {
+    "id": "ADVERSARIAL_OBFUSCATION_002",
+    "text": "Selected for remote role! Contact our HR team on W.h.a.t.s.A.p.p at +123456789 to get hired.",
+    "expected_label": "needs_verification",
+    "expected_category": "fake_job",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests punctuation obfuscation in channel hopping keyword ('W.h.a.t.s.A.p.p')."
+  },
+  {
+    "id": "ADVERSARIAL_OBFUSCATION_003",
+    "text": "G_U_A_R_A_N_T_E_E_D 50% profit daily! Deposit crypto now into our bot.",
+    "expected_label": "high",
+    "expected_category": "investment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests spaced underscore obfuscation in guarantee keyword."
+  },
+
+  {
+    "id": "ADVERSARIAL_PASSIVE_INDIRECT_001",
+    "text": "A temporary restriction has been instituted regarding your card. Submission of the security verification number is requested to lift this constraint.",
+    "expected_label": "needs_verification",
+    "expected_category": "bank_payment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests passive academic voice without standard imperative verbs ('submission is requested')."
+  },
+  {
+    "id": "ADVERSARIAL_PASSIVE_INDIRECT_002",
+    "text": "Upon receipt of $50 for onboarding administrative processing, the work-from-home computing equipment will be dispatched.",
+    "expected_label": "high",
+    "expected_category": "fake_job",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests indirect passive phrasing for upfront job equipment fee."
+  },
+
+  {
+    "id": "ADVERSARIAL_MIXED_001",
+    "text": "Congratulations! You have been hired for our remote data role ($500/day). Your first assignment is to deposit funds into our automated crypto bot on WhatsApp.",
+    "expected_label": "high",
+    "expected_category": "fake_job",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests mixed-category conflict: combines fake job offer with crypto deposit and WhatsApp redirect."
+  },
+  {
+    "id": "ADVERSARIAL_MIXED_002",
+    "text": "Your bank account has been frozen. To unlock it, invest in our certified crypto liquidity pool or pay $200 via wire transfer immediately.",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests mixed-category conflict: combines bank account freeze with crypto investment and urgency."
+  },
+
+  {
+    "id": "ADVERSARIAL_WEAK_STACK_001",
+    "text": "Dear Customer, please message us on WhatsApp if you have any questions regarding your upcoming appointment.",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests combination of two weak signals (generic greeting + WhatsApp) without any threat, fee, or financial scam cues."
+  },
+  {
+    "id": "ADVERSARIAL_WEAK_STACK_002",
+    "text": "Attention User, please click the link below to view our updated terms of service: https://acme.org/terms",
+    "expected_label": "low",
+    "expected_category": null,
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests generic greeting + standard policy link without urgent threats or credential harvesting."
+  },
+
+  {
+    "id": "ADVERSARIAL_SPACING_CASING_001",
+    "text": "   u R g E n T   :   Y O U R   B A N K   A C C O U N T   I S   L O C K E D !   R E P L Y   W I T H   O T P   N O W !   ",
+    "expected_label": "high",
+    "expected_category": "bank_payment",
+    "source_type": "adversarial-synthetic",
+    "notes": "Tests spaced single-letter words and mixed capitalization."
+  }
+]
