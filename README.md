@@ -46,6 +46,7 @@ ScamCheck/
 ## Local Development Setup
 
 ### 1. Prerequisites
+
 - **Node.js** 18+ (Tested on Node 22)
 - **Python** 3.10+ (Tested on Python 3.12)
 
@@ -96,18 +97,21 @@ npm run dev
 ## Running Tests & Building
 
 ### 1. Run Backend Automated Tests
+
 ```bash
 cd backend
 pytest -v
 ```
 
 ### 2. Run Evaluation Script
+
 ```bash
 cd backend
 python evaluate.py
 ```
 
 ### 3. Build Frontend for Production
+
 ```bash
 npm run build
 ```
@@ -128,4 +132,4 @@ The repository is configured for **zero-config full-stack deployment on Vercel**
 
 Vercel automatically builds the React SPA and deploys the FastAPI backend as Python serverless functions defined in `api/index.py` via `vercel.json` rewrites.
 
-*For decoupled hosting (e.g. Frontend on Vercel + Backend on Render/Railway), set `VITE_API_BASE_URL=https://your-backend-domain.com` in your Vercel Environment Variables.*
+_For decoupled hosting (e.g. Frontend on Vercel + Backend on Render/Railway), set `VITE_API_BASE_URL=https://your-backend-domain.com` in your Vercel Environment Variables._
