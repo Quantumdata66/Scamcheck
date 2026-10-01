@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-02-CHAR-TFIDF-LOGREG",
+  "timestamp_utc": "2026-10-01T18:25:16.821800+00:00",
+  "total_samples": 210,
+  "train_samples": 168,
+  "test_samples": 42,
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.9047619047619048,
+  "random_state": 42,
+  "test_size": 0.2,
+  "classes": [
+    "legitimate",
+    "scam"
+  ],
+  "vocabulary_size": 5000,
+  "hyperparameters": {
+    "model_type": "Character TF-IDF + LogisticRegression",
+    "analyzer": "char_wb",
+    "ngram_range": [
+      3,
+      5
+    ],
+    "max_features": 5000,
+    "sublinear_tf": true,
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "lbfgs"
+  }
+}
