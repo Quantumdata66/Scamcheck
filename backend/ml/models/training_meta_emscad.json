@@ -1,0 +1,287 @@
+{
+  "experiment_id": "EXP-03-EMSCAD-FAKE-JOB",
+  "timestamp_utc": "2026-10-01T22:41:56.600839+00:00",
+  "model_artifact": "scamcheck_emscad_fake_job_pipeline.joblib",
+  "random_state": 42,
+  "selected_configuration": {
+    "config_id": "CONFIG_04_WORD_UNIGRAM_C1_BALANCED",
+    "name": "Word TF-IDF (1-1) Unigram, max_feat=10k, C=1.0, balanced",
+    "params": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        1
+      ],
+      "max_features": 10000,
+      "c_param": 1.0,
+      "class_weight": "balanced",
+      "sublinear_tf": true
+    }
+  },
+  "split_counts": {
+    "train": {
+      "total": 11340,
+      "scam": 505,
+      "legitimate": 10835
+    },
+    "validation": {
+      "total": 2430,
+      "scam": 108,
+      "legitimate": 2322
+    },
+    "test": {
+      "total": 2431,
+      "scam": 108,
+      "legitimate": 2323
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9740847387906212,
+    "macro_f1": 0.8666654478307768,
+    "macro_precision": 0.8265121248722476,
+    "macro_recall": 0.9202240876261539,
+    "scam_precision": 0.6595744680851063,
+    "scam_recall": 0.8611111111111112,
+    "scam_f1": 0.7469879518072289,
+    "scam_support": 108,
+    "legitimate_precision": 0.9934497816593887,
+    "legitimate_recall": 0.9793370641411967,
+    "legitimate_f1": 0.9863429438543247,
+    "legitimate_support": 2323,
+    "pr_auc": 0.86164436740733,
+    "confusion_matrix": {
+      "tn": 2275,
+      "fp": 48,
+      "fn": 15,
+      "tp": 93,
+      "matrix": [
+        [
+          2275,
+          48
+        ],
+        [
+          15,
+          93
+        ]
+      ]
+    }
+  },
+  "majority_class_test_baseline": {
+    "accuracy": 0.9555738379267791,
+    "scam_precision": 0.0,
+    "scam_recall": 0.0,
+    "scam_f1": 0.0,
+    "pr_auc": 0.0444261620732209
+  },
+  "sample_false_positives": [
+    {
+      "job_id": "emscad_8195",
+      "title": "Project Controls Specialist",
+      "text_preview": "Job Title: Project Controls Specialist\n\nDescription: <p>Under occasional leadership,\u00a0<br>\u2022Create and analyzes Funding Project and Detail Project number in PowerPlant. Supports other Powerplant process...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.5599404847793986,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_16780",
+      "title": "QMS Consultant Required for UAE",
+      "text_preview": "Job Title: QMS Consultant Required for UAE\n\nCompany Profile: <p><b>VAM SYSTEMS</b>\u00a0is a Business Consulting, IT Solutions and Services\u00a0company with operations in UAE, Qatar, Bahrain, USA, Australia, S...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.6802824458090813,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_2167",
+      "title": "Oil & Gas Mechanical Engineer - Fort Worth, TX",
+      "text_preview": "Job Title: Oil & Gas Mechanical Engineer - Fort Worth, TX\n\nCompany Profile: <p>We Provide Full Time Permanent Positions for many medium to large US companies. We are interested in finding/recruiting h...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.789486569855326,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_2876",
+      "title": "Cashier Cruise Ship",
+      "text_preview": "Job Title: Cashier Cruise Ship\n\nDescription: <p><b>Casino Cashier</b></p>\n<p>\u00a0</p>\n<p>We are currently recruiting for cashiers responsible for controlling and accounting of transactions for the cage w...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.6621350047001011,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_3026",
+      "title": "Sales Executive (Pest Control)",
+      "text_preview": "Job Title: Sales Executive (Pest Control)\n\nDescription: <p>Due to my clients continued and successful growth, we\u2019re looking for a candidate who can help develop our pest control business even further ...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.6091016607806465,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_8871",
+      "title": "Business Account Manager",
+      "text_preview": "Job Title: Business Account Manager\n\nDescription: <p>If you're a closer and have the following qualities of a successful sales person, we want to speak with you:<br><br>Willingness to learn<br>Ability...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.7670057836540506,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_8738",
+      "title": "Administrative Assistant",
+      "text_preview": "Job Title: Administrative Assistant\n\nCompany Profile: <p>At Hayes-Corp, we create the fun stuff.\u00a0 With a focus on software development for mobile platforms, we are constantly looking for talented peop...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.6464217233236955,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_4881",
+      "title": "Looking for a wedding videographer",
+      "text_preview": "Job Title: Looking for a wedding videographer\n\nDescription: <p>Birmingham based videography company is looking for a wedding videographer on the 1st and 3rd of August for a wedding. We need only filmi...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.5698479083584573,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_6674",
+      "title": "SMALL ENGINE EQUIPMENT TECHNICIAN",
+      "text_preview": "Job Title: SMALL ENGINE EQUIPMENT TECHNICIAN\n\nDescription: <p>Growing middle Tennessee company seeks qualified small engine and equipment mechanic.</p>\n\nRequirements: <p>Prior related experience requi...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.5083070341215385,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_12647",
+      "title": "Entry Level Drafting Position",
+      "text_preview": "Job Title: Entry Level Drafting Position\n\nDescription: <p>Responsibilities would include, but are not limited to the following:\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0...",
+      "true_label": "legitimate",
+      "predicted_label": "scam",
+      "p_scam": 0.7521976208699515,
+      "is_correct": false
+    }
+  ],
+  "sample_false_negatives": [
+    {
+      "job_id": "emscad_3463",
+      "title": "Business Development Manager",
+      "text_preview": "Job Title: Business Development Manager\n\nDescription: <p>We are currently looking for a client-focused and results-driven Business Development Manager to join our team.</p>\n<p>Working with market lead...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.04437242468847105,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_6363",
+      "title": "Integration Engineer with HL7 & EMR.",
+      "text_preview": "Job Title: Integration Engineer with HL7 & EMR.\n\nDescription: <p><b>\u00a0</b></p>\n<p>Location: Plano, TX</p>\n<p>Duration: 10 Months</p>\n<p>\u00a0<b>Role Description:</b></p>\n<p>\u00a0The Integration Engineer role i...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.2557305640969861,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_8595",
+      "title": "Clinical Director  ",
+      "text_preview": "Job Title: Clinical Director\n\nDescription: <p>Apply using below link</p>\n<p><a href=\"#URL_b76b76a4d2bcc16ce99d1541679e0f2a4a0bc69701d85f1c71da00c5d5a3c68a#\">#URL_b76b76a4d2bcc16ce99d1541679e0f2a4a0bc6...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.42676628000628514,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_14270",
+      "title": "Northwestern Hospital",
+      "text_preview": "Job Title: Northwestern Hospital\n\nDescription: <p>build a website</p>",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.30132764584028554,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_17644",
+      "title": "Fidelity",
+      "text_preview": "Job Title: Fidelity\n\nDescription: <p>The key to this position is that Steve wants to see how people think. \u00a0He doesn't want to see extensive models or get a lot of background on the stock. \u00a0He wants t...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.424912430373045,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_5073",
+      "title": "Junior Engineer/Engineering Technician",
+      "text_preview": "Job Title: Junior Engineer/Engineering Technician\n\nDescription: <p>\u00a0Founded in 1866, San Jose Water Company is an investor owned water company headquartered in Silicon Valley and is one of the largest...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.48799128055422225,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_17566",
+      "title": "Clinical Director - Surgical Services  ",
+      "text_preview": "Job Title: Clinical Director - Surgical Services\n\nDescription: <p>Apply using below link</p>\n<p><a href=\"#URL_cf955625ede97e1444d64f9efbdd5c61a812c7444ce84be35525380f7549cf19#\">#URL_cf955625ede97e1444...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.2766125704189082,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_3711",
+      "title": "software development life cycle",
+      "text_preview": "Job Title: software development life cycle\n\nDescription: <p>\u00a0</p>\n<p>\u00a0</p>\n<p><b>Title: Service Desk Resource</b></p>\n<p><b>Location: Atlanta, GA</b></p>\n<p><b>Duration: Long Term</b></p>\n<p>\u00a0</p>\n<p>...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.22307663329056956,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_17808",
+      "title": "vacancies,nannies,cooks,drivers and housekeepers needed",
+      "text_preview": "Job Title: vacancies,nannies,cooks,drivers and housekeepers needed\n\nDescription: <p><br><br>We are hiring home / domestic #URL_a611accdf5e94eb5fe30981160c8d3567cd60b01d074a6bfea919aca521be808# mother ...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.3873797601823449,
+      "is_correct": false
+    },
+    {
+      "job_id": "emscad_4266",
+      "title": "Customer Service Representative",
+      "text_preview": "Job Title: Customer Service Representative\n\nCompany Profile: <p>Since\u00a02005,\u00a0American\u00a0Secured Benefits, a leading financial planning and insurance brokerage company, has helped thousands of clients sec...",
+      "true_label": "scam",
+      "predicted_label": "legitimate",
+      "p_scam": 0.0607179655757788,
+      "is_correct": false
+    }
+  ],
+  "total_false_positives": 48,
+  "total_false_negatives": 15,
+  "short_message_benchmark_transfer": {
+    "overall": {
+      "total_samples": 37,
+      "accuracy": 0.5135135135135135,
+      "macro_f1": 0.5044642857142857,
+      "macro_precision": 0.6031746031746031,
+      "macro_recall": 0.5807453416149069,
+      "scam_precision": 0.7777777777777778,
+      "scam_recall": 0.30434782608695654,
+      "scam_f1": 0.4375,
+      "scam_support": 23,
+      "legitimate_precision": 0.42857142857142855,
+      "legitimate_recall": 0.8571428571428571,
+      "legitimate_f1": 0.5714285714285714,
+      "legitimate_support": 14
+    },
+    "subsets": {
+      "adversarial_count": 13,
+      "adversarial_correct": 3,
+      "adversarial_accuracy": 0.23076923076923078,
+      "standard_count": 24,
+      "standard_correct": 16,
+      "standard_accuracy": 0.6666666666666666
+    }
+  }
+}

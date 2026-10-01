@@ -1,0 +1,241 @@
+{
+  "timestamp_utc": "2026-10-01T22:40:30.952028+00:00",
+  "selected_config": "CONFIG_04_WORD_UNIGRAM_C1_BALANCED",
+  "candidate_results": [
+    {
+      "config_id": "CONFIG_01_WORD_TFIDF_C1_BALANCED",
+      "name": "Word TF-IDF (1-2), max_feat=10k, C=1.0, balanced",
+      "hyperparameters": {
+        "analyzer": "word",
+        "ngram_range": [
+          1,
+          2
+        ],
+        "max_features": 10000,
+        "c_param": 1.0,
+        "class_weight": "balanced",
+        "sublinear_tf": true
+      },
+      "validation_metrics": {
+        "accuracy": 0.9654320987654321,
+        "macro_f1": 0.8329629035584172,
+        "macro_precision": 0.7842334863612053,
+        "macro_recall": 0.9068690783807063,
+        "scam_precision": 0.5759493670886076,
+        "scam_recall": 0.8425925925925926,
+        "scam_f1": 0.6842105263157895,
+        "scam_support": 108,
+        "legitimate_precision": 0.9925176056338029,
+        "legitimate_recall": 0.97114556416882,
+        "legitimate_f1": 0.9817152808010449,
+        "legitimate_support": 2322,
+        "pr_auc": 0.8256575386948533,
+        "confusion_matrix": {
+          "tn": 2255,
+          "fp": 67,
+          "fn": 17,
+          "tp": 91,
+          "matrix": [
+            [
+              2255,
+              67
+            ],
+            [
+              17,
+              91
+            ]
+          ]
+        }
+      },
+      "selection_score": 1.6586204422532704
+    },
+    {
+      "config_id": "CONFIG_02_WORD_TFIDF_C05_BALANCED",
+      "name": "Word TF-IDF (1-2), max_feat=10k, C=0.5 (Stronger L2), balanced",
+      "hyperparameters": {
+        "analyzer": "word",
+        "ngram_range": [
+          1,
+          2
+        ],
+        "max_features": 10000,
+        "c_param": 0.5,
+        "class_weight": "balanced",
+        "sublinear_tf": true
+      },
+      "validation_metrics": {
+        "accuracy": 0.9604938271604938,
+        "macro_f1": 0.8168623547255605,
+        "macro_precision": 0.7638859968766267,
+        "macro_recall": 0.9042850990525408,
+        "scam_precision": 0.5352941176470588,
+        "scam_recall": 0.8425925925925926,
+        "scam_f1": 0.6546762589928058,
+        "scam_support": 108,
+        "legitimate_precision": 0.9924778761061946,
+        "legitimate_recall": 0.9659776055124892,
+        "legitimate_f1": 0.9790484504583151,
+        "legitimate_support": 2322,
+        "pr_auc": 0.8061329332431294,
+        "confusion_matrix": {
+          "tn": 2243,
+          "fp": 79,
+          "fn": 17,
+          "tp": 91,
+          "matrix": [
+            [
+              2243,
+              79
+            ],
+            [
+              17,
+              91
+            ]
+          ]
+        }
+      },
+      "selection_score": 1.6229952879686897
+    },
+    {
+      "config_id": "CONFIG_03_WORD_TFIDF_C2_BALANCED",
+      "name": "Word TF-IDF (1-2), max_feat=10k, C=2.0 (Weaker L2), balanced",
+      "hyperparameters": {
+        "analyzer": "word",
+        "ngram_range": [
+          1,
+          2
+        ],
+        "max_features": 10000,
+        "c_param": 2.0,
+        "class_weight": "balanced",
+        "sublinear_tf": true
+      },
+      "validation_metrics": {
+        "accuracy": 0.971604938271605,
+        "macro_f1": 0.8528450225599016,
+        "macro_precision": 0.8159972240452946,
+        "macro_recall": 0.9012704565030146,
+        "scam_precision": 0.6402877697841727,
+        "scam_recall": 0.8240740740740741,
+        "scam_f1": 0.7206477732793523,
+        "scam_support": 108,
+        "legitimate_precision": 0.9917066783064165,
+        "legitimate_recall": 0.9784668389319552,
+        "legitimate_f1": 0.9850422718404509,
+        "legitimate_support": 2322,
+        "pr_auc": 0.8431459941468965,
+        "confusion_matrix": {
+          "tn": 2272,
+          "fp": 50,
+          "fn": 19,
+          "tp": 89,
+          "matrix": [
+            [
+              2272,
+              50
+            ],
+            [
+              19,
+              89
+            ]
+          ]
+        }
+      },
+      "selection_score": 1.695991016706798
+    },
+    {
+      "config_id": "CONFIG_04_WORD_UNIGRAM_C1_BALANCED",
+      "name": "Word TF-IDF (1-1) Unigram, max_feat=10k, C=1.0, balanced",
+      "hyperparameters": {
+        "analyzer": "word",
+        "ngram_range": [
+          1,
+          1
+        ],
+        "max_features": 10000,
+        "c_param": 1.0,
+        "class_weight": "balanced",
+        "sublinear_tf": true
+      },
+      "validation_metrics": {
+        "accuracy": 0.9699588477366256,
+        "macro_f1": 0.8522167487684729,
+        "macro_precision": 0.8041153220181354,
+        "macro_recall": 0.9224806201550387,
+        "scam_precision": 0.6143790849673203,
+        "scam_recall": 0.8703703703703703,
+        "scam_f1": 0.7203065134099617,
+        "scam_support": 108,
+        "legitimate_precision": 0.9938515590689504,
+        "legitimate_recall": 0.9745908699397071,
+        "legitimate_f1": 0.9841269841269841,
+        "legitimate_support": 2322,
+        "pr_auc": 0.8441007351161184,
+        "confusion_matrix": {
+          "tn": 2263,
+          "fp": 59,
+          "fn": 14,
+          "tp": 94,
+          "matrix": [
+            [
+              2263,
+              59
+            ],
+            [
+              14,
+              94
+            ]
+          ]
+        }
+      },
+      "selection_score": 1.6963174838845911
+    },
+    {
+      "config_id": "CONFIG_05_CHAR_WB_TFIDF_C1_BALANCED",
+      "name": "Char-WB TF-IDF (3-4), max_feat=5k, C=1.0, balanced",
+      "hyperparameters": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          4
+        ],
+        "max_features": 5000,
+        "c_param": 1.0,
+        "class_weight": "balanced",
+        "sublinear_tf": true
+      },
+      "validation_metrics": {
+        "accuracy": 0.9432098765432099,
+        "macro_f1": 0.7705093496190896,
+        "macro_precision": 0.7113431627247883,
+        "macro_recall": 0.8996554694229113,
+        "scam_precision": 0.42990654205607476,
+        "scam_recall": 0.8518518518518519,
+        "scam_f1": 0.5714285714285714,
+        "scam_support": 108,
+        "legitimate_precision": 0.9927797833935018,
+        "legitimate_recall": 0.9474590869939707,
+        "legitimate_f1": 0.9695901278096077,
+        "legitimate_support": 2322,
+        "pr_auc": 0.7447456499933306,
+        "confusion_matrix": {
+          "tn": 2200,
+          "fp": 122,
+          "fn": 16,
+          "tp": 92,
+          "matrix": [
+            [
+              2200,
+              122
+            ],
+            [
+              16,
+              92
+            ]
+          ]
+        }
+      },
+      "selection_score": 1.51525499961242
+    }
+  ]
+}
