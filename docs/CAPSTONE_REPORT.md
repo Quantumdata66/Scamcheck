@@ -1,7 +1,8 @@
-﻿# ScamCheck: Explainable Decision-Support System for Digital Scam Detection
+# ScamCheck: Explainable Decision-Support System for Digital Scam Detection
 
 **Capstone Project Final Report**
 *BuildLabs Applied AI Engineering Cohort 2*
+**Author / Participant:** Quantumdata66
 **Repository:** [https://github.com/Quantumdata66/Scamcheck](https://github.com/Quantumdata66/Scamcheck)
 **Live Application:** [https://scam-check-eight.vercel.app/](https://scam-check-eight.vercel.app/)
 **Date:** October 2026

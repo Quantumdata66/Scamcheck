@@ -420,8 +420,9 @@ ScamCheck/
 
 ---
 
-## 12. License & Data Provenance
+## 12. Author, License & Data Provenance
 
+- **Author / Participant:** Quantumdata66 (BuildLabs Applied AI Engineering Cohort 2).
 - **Project License:** Created as part of the BuildLabs Capstone Project (Cohort 2). Distributed for educational and non-commercial research purposes.
 - **Synthetic ML Dataset ($N=210$):** Curated and validated specifically for ScamCheck's short-message baseline experiments ([`backend/data/ml/DATASET_CARD.md`](backend/data/ml/DATASET_CARD.md)).
 - **EMSCAD Dataset ($N=17,880$ raw / $16,201$ unique):** Employment Scam Aegean Dataset, published by C. Vidros, C. Kolias, G. Kambourakis, and L. Akoglu (2017), derived from Workable job postings (2012–2014) and sourced via public research mirrors.

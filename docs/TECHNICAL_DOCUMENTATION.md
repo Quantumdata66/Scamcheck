@@ -1,7 +1,8 @@
-﻿# ScamCheck: Technical Documentation
+# ScamCheck: Technical Documentation
 
 > **Architecture, Detection Engine, API Contracts, and Deployment Guide**
 > *ScamCheck: Explainable Decision Support for Suspicious Text Message Screening*
+> **Author / Maintainer:** Quantumdata66
 
 ---
 
