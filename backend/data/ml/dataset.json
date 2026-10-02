@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "ML_SYNTH_001",
+    "text": "ALERT: Your Wells Fargo checking account has been suspended due to suspicious activity. Verify your identity at http://wells-secure-portal.com immediately to unlock.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Classic bank suspension phishing with unverified domain."
+  },
+  {
+    "id": "ML_SYNTH_002",
+    "text": "Chase Fraud Prevention: Did you authorize a debit of $890.50 to BestBuy? If NO, call our dispute center immediately at 1-800-555-0192 to cancel the transaction.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Panic-inducing unauthorized charge with fake phone hotline."
+  },
+  {
+    "id": "ML_SYNTH_003",
+    "text": "PayPal: A payment of $429.99 to Digital Goods Corp was approved. If you did not make this purchase, click here to dispute: https://paypal-dispute-resolution.net/auth",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Invoice phishing redirecting to lookalike domain."
+  },
+  {
+    "id": "ML_SYNTH_004",
+    "text": "Bank of America: We detected an unrecognized login from Miami, FL. Please reply with the 6-digit one-time passcode sent to your mobile device to secure your credentials.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Direct OTP/credential interception attempt via SMS reply."
+  },
+  {
+    "id": "ML_SYNTH_005",
+    "text": "URGENT NOTICE: Your debit card ending in 4108 has been temporarily restricted. Enter your PIN and card security code at https://secure-bank-reactivate.cc to restore access.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Direct harvesting of debit card PIN and CVV."
+  },
+  {
+    "id": "ML_SYNTH_006",
+    "text": "Santander Security: An unauthorized wire transfer of 1,200 GBP is pending. To cancel this transfer, you must move your funds to our designated safe escrow account now.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Safe account redirect scam involving wire transfer."
+  },
+  {
+    "id": "ML_SYNTH_007",
+    "text": "Security Dept: Unusual login attempt detected on your mobile banking app. Tap https://online-auth-verification.com/login to confirm your username and master password.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Generic bank login harvesting via generic suspicious URL."
+  },
+  {
+    "id": "ML_SYNTH_008",
+    "text": "Revolut Alert: Your account will be terminated within 24 hours due to unconfirmed KYC details. Complete your biometric and passport verification here: http://revolut-kyc-desk.org",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Urgent deadline threat targeting KYC and identity documents."
+  },
+  {
+    "id": "ML_SYNTH_009",
+    "text": "Your Apple Pay service has been disabled after multiple failed passcodes. Unlock your wallet immediately by updating billing details at https://apple-pay-manage.info",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Digital wallet restriction alert directing to phishing portal."
+  },
+  {
+    "id": "ML_SYNTH_010",
+    "text": "Capital One: A new device has been paired with your credit account. If this was not you, respond with STOP and visit https://capone-fraud-team.net/protect",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Device authorization pretext designed to harvest login."
+  },
+  {
+    "id": "ML_SYNTH_011",
+    "text": "TD Bank Notification: You received an Interac e-Transfer of $350.00. Click http://e-transfer-td-portal.me/claim to deposit the funds into your personal account.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "E-transfer incoming funds bait leading to credential harvest."
+  },
+  {
+    "id": "ML_SYNTH_012",
+    "text": "Monzo: We noticed anomalous transaction patterns on your virtual card. Please authenticate your full card number and expiration date at https://monzo-support-sec.com",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Card detail solicitation using security buzzwords."
+  },
+  {
+    "id": "ML_SYNTH_013",
+    "text": "Venmo Security Notice: Someone attempted to withdraw $600 from your Venmo balance. If unrecognized, log in via http://venmo-cancel-req.cc/session to decline immediately.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "P2P payment withdrawal panic lure."
+  },
+  {
+    "id": "ML_SYNTH_014",
+    "text": "IRS Direct Notice: You have an unpaid federal tax balance of $1,420. Avoid asset freeze and legal prosecution by settling via Target gift cards or crypto immediately.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Government authority impersonation demanding gift card/crypto settlement."
+  },
+  {
+    "id": "ML_SYNTH_015",
+    "text": "HSBC: An international outbound wire of $4,500 is scheduled for processing. To block this payment, verify your online passcode at https://hsbc-wire-cancel.com",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Outbound international transfer fear tactic."
+  },
+  {
+    "id": "ML_SYNTH_016",
+    "text": "Citizens Bank: We were unable to process your auto-loan payment. To avoid negative credit bureau reporting, re-enter your online banking credentials at http://citizens-verify-acc.com",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Loan default threat demanding banking credentials."
+  },
+  {
+    "id": "ML_SYNTH_017",
+    "text": "USAA Alert: A temporary security block has been placed on your checking profile. Call 1-888-901-3321 right now to confirm your social security number and mother's maiden name.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Vishing hook requesting SSN and security questions."
+  },
+  {
+    "id": "ML_SYNTH_018",
+    "text": "Zelle Notice: Your instant payment of $320.00 is placed on hold. Please release the hold by confirming your PIN on https://zelle-verification-sync.org",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Zelle hold pretext requesting PIN."
+  },
+  {
+    "id": "ML_SYNTH_019",
+    "text": "Barclays Fraud Alert: Did you spend 350.00 GBP at Argos? If unrecognized, immediately visit http://barclays-review-transaction.com to reverse the transaction charges.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Merchant charge panic leading to credential capture."
+  },
+  {
+    "id": "ML_SYNTH_020",
+    "text": "PNC Bank: Access to your online account has expired due to updated security protocols. Renew your credentials before 11:59 PM today at https://pnc-online-renewal.net",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Time-sensitive credential renewal pretext."
+  },
+  {
+    "id": "ML_SYNTH_021",
+    "text": "ATTN: Your electronic banking profile has been locked after several unauthorized connection attempts. Visit http://ebank-unlock-profile.com to restore normal operations.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Generic financial lock notification."
+  },
+  {
+    "id": "ML_SYNTH_022",
+    "text": "Card Services: A suspicious charge of $1,199 from Apple Store London was declined. If this was not authorized, visit https://cards-fraud-resolution.cc immediately.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "High-value luxury purchase fear trigger."
+  },
+  {
+    "id": "ML_SYNTH_023",
+    "text": "Notice: An unverified refund of $249.00 has been sent to your bank. To claim this refund, confirm your account number and card CVV at http://refund-secure-portal.com",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Overpayment/refund lure harvesting CVV."
+  },
+  {
+    "id": "ML_SYNTH_024",
+    "text": "CashApp: You have an incoming deposit of $750.00 waiting. To release pending funds, pay the $25 clearance verification fee via Bitcoin at address bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Advance-fee scam requiring crypto deposit to release funds."
+  },
+  {
+    "id": "ML_SYNTH_025",
+    "text": "Security Alert: Someone in Singapore just accessed your account. To prevent unauthorized money transfers, change your password immediately at https://secure-account-sync.net/auth",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Geographic intrusion panic with generic phishing URL."
+  },
+  {
+    "id": "ML_SYNTH_026",
+    "text": "Billing Dept: We were unable to bill your monthly service fee. Please update your credit card number, expiry, and CVV on http://update-billing-info.org within 2 hours.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Subscription billing failure lure with deadline."
+  },
+  {
+    "id": "ML_SYNTH_027",
+    "text": "Citibank: Unusual activity detected. We have restricted outgoing payments from your account. To lift this safeguard, please log in at https://citi-security-alert.net/verify",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Account restriction pretext with phishing link."
+  },
+  {
+    "id": "ML_SYNTH_028",
+    "text": "Payment Notice: A direct debit of $512.00 from Amazon Marketplace is scheduled for today. To stop this charge, click http://dispute-amazon-charge.net immediately.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "E-commerce direct debit dispute lure."
+  },
+  {
+    "id": "ML_SYNTH_029",
+    "text": "Discover Card: Your account is scheduled for closure due to non-compliance with new KYC guidelines. Please verify your profile at https://discover-card-portal.cc",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Account termination warning citing compliance."
+  },
+  {
+    "id": "ML_SYNTH_030",
+    "text": "Fraud Center: We detected 3 consecutive failed ATM PIN attempts. To unlock your ATM card, provide your full 16-digit card number and PIN at http://atm-card-unlock.org",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "ATM lock narrative collecting PIN."
+  },
+  {
+    "id": "ML_SYNTH_031",
+    "text": "Western Union: You have a pending money transfer of $2,000. To receive payout, verify your social security number and online banking login at https://wu-transfer-track.info",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Remittance money lure requesting SSN and login."
+  },
+  {
+    "id": "ML_SYNTH_032",
+    "text": "Lloyds Bank: A suspicious payee 'John Miller' was added to your account. If you did not add this recipient, tap http://lloyds-payee-cancel.com to remove immediately.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "New payee addition alert leading to fake cancellation page."
+  },
+  {
+    "id": "ML_SYNTH_033",
+    "text": "Financial Security: Verification is required to be performed within 60 minutes or all linked accounts shall be permanently suspended. Visit https://auth-ebank-secure.cc",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Passive-voice adversarial formulation of urgent account suspension."
+  },
+  {
+    "id": "ML_SYNTH_034",
+    "text": "Debit Card Advisory: A charge of $680.00 from Dubai Luxury Hotel was flagged. Cancel this transaction by providing your mobile 2FA code at http://card-fraud-dispute.me",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Foreign transaction panic soliciting 2FA passcode."
+  },
+  {
+    "id": "ML_SYNTH_035",
+    "text": "URGENT: Your bank account will be frozen within 2 hours. Move all remaining funds to our secure Federal Reserve reserve wallet to safeguard your capital.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Asset freeze threat with safe wallet redirection."
+  },
+  {
+    "id": "ML_SYNTH_036",
+    "text": "Hello! I am a recruitment coordinator at Global Staffing. We have remote part-time positions paying $350-$600 daily for 1 hour of work. Message our manager on WhatsApp: +1-555-891-2300",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Unrealistic daily pay and off-platform WhatsApp redirection."
+  },
+  {
+    "id": "ML_SYNTH_037",
+    "text": "Congratulations! Your resume has been shortlisted for the Remote Data Entry role. Daily salary is $200-$400. No experience needed. Contact @recruiter_jenny on Telegram now.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "No-experience high daily wage job directing to Telegram."
+  },
+  {
+    "id": "ML_SYNTH_038",
+    "text": "Amazon HR Team: We have selected you for our online product review specialist position ($50/hour). You just need to rate merchant apps. Reply YES to get started on WhatsApp.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Impersonating Amazon for app rating / task rebate scam."
+  },
+  {
+    "id": "ML_SYNTH_039",
+    "text": "You are hired as a Virtual Executive Assistant! To begin your paid onboarding, you must purchase the mandatory home office equipment kit ($150) from our accredited vendor.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Immediate hire with upfront fee for equipment."
+  },
+  {
+    "id": "ML_SYNTH_040",
+    "text": "Earn $3,000 to $5,000 per week simply by liking YouTube videos and following TikTok influencers. Payouts are made daily via USDT. Contact our supervisor on Telegram: @tiktok_pay_hr",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Video liking / social media task scam with crypto payouts."
+  },
+  {
+    "id": "ML_SYNTH_041",
+    "text": "Dear Candidate, you have been selected for the Data Analyst role at Apex Tech without an interview. Please transfer the $95 background screening fee via Zelle to complete registration.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Direct hire requiring advance background check payment."
+  },
+  {
+    "id": "ML_SYNTH_042",
+    "text": "Urgent hiring: Flexible part-time job evaluating hotel booking listings. Earn $180/day on your smartphone. Only 5 openings left today. Reach out to our HR on WhatsApp: +44-7700-900123",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Hotel optimization task scam with artificial scarcity."
+  },
+  {
+    "id": "ML_SYNTH_043",
+    "text": "Hi, I am Sarah from Adecco Recruitment. We found your profile on LinkedIn and have an urgent opening for an online brand ambassador paying $70/hr. Message me on Signal: +1-555-092-4411",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Brand name recruiter impersonation directing to Signal messaging."
+  },
+  {
+    "id": "ML_SYNTH_044",
+    "text": "Job Offer: Remote customer service assistant. Salary $4,200/month. To finalize your employment contract, wire $120 for courier delivery of your company laptop and welcome package.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Courier fee advance-payment job scam."
+  },
+  {
+    "id": "ML_SYNTH_045",
+    "text": "Simple smartphone task: Boost app rankings in the App Store and receive 20% commission on every task completed. Initial deposit of $50 required to unlock VIP high-commission tier.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Task deposit escalator scam."
+  },
+  {
+    "id": "ML_SYNTH_046",
+    "text": "Good day! Our international travel agency is recruiting remote travel reviewers. Work 30 minutes daily and earn $300-$500. Message our hiring manager on WhatsApp: +1-555-432-9876",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Travel reviewer high wage lure with WhatsApp contact."
+  },
+  {
+    "id": "ML_SYNTH_047",
+    "text": "Congratulations! You have passed the initial screening for our Freelance Content Evaluator position. Daily wage $250. Click http://apply-remote-evaluator.net/onboard to submit your SSN.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Fake onboarding portal collecting SSN."
+  },
+  {
+    "id": "ML_SYNTH_048",
+    "text": "Work from home full time or part time! Earn $80/hr doing simple copy-paste tasks. No qualifications or resume required. Immediate start. Telegram: @online_remote_jobs_hr",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Copy-paste easy work lure with Telegram channel."
+  },
+  {
+    "id": "ML_SYNTH_049",
+    "text": "Dear applicant, we received your application for Remote QA Tester. To ensure candidate dedication, an upfront refundable software licensing deposit of $75 is mandatory.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Refundable software license fee scam."
+  },
+  {
+    "id": "ML_SYNTH_050",
+    "text": "Hey! We are looking for 10 motivated individuals to optimize merchant products online. Earn up to $450 every day. Payouts sent via PayPal or USDT. Reach us on WhatsApp now.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "E-commerce product optimization lure."
+  },
+  {
+    "id": "ML_SYNTH_051",
+    "text": "Hello, my name is Linda from Robert Half. We have a remote project management opportunity paying $90/hr. Please contact our talent acquisition director on Telegram: @roberthalf_hiring",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Robert Half staffing agency impersonation on Telegram."
+  },
+  {
+    "id": "ML_SYNTH_052",
+    "text": "URGENT HIRE: Package forwarding agent. Receive parcels at your residential address, inspect contents, and reship to international addresses. Earn $50 per parcel processed.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Reshipping mule scam."
+  },
+  {
+    "id": "ML_SYNTH_053",
+    "text": "You have been approved for our remote data typing contract ($1,500/week). Purchase the required formatting software package from our portal http://typing-tools-setup.cc to begin.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Upfront software purchase prerequisite."
+  },
+  {
+    "id": "ML_SYNTH_054",
+    "text": "TikTok Video Review Program: Watch and like 10 short videos daily, earn $200 instant cash. Register your phone number and connect on WhatsApp: +1-555-765-4321",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Social media engagement task rebate scam."
+  },
+  {
+    "id": "ML_SYNTH_055",
+    "text": "Hi! We found your CV on Indeed. We offer a flexible remote customer liaison position ($400 daily). No interview is required. Contact our HR manager on Telegram: @hr_liaison_desk",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Indeed CV scraping lure with no interview."
+  },
+  {
+    "id": "ML_SYNTH_056",
+    "text": "Remote Data Clerk vacancy: Earn $30/hour. Prior to starting your shift, submit a $45 identity background verification fee via CashApp to $HRBackgroundCheck.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Direct background check fee via CashApp."
+  },
+  {
+    "id": "ML_SYNTH_057",
+    "text": "Greetings from Hays Recruitment! We have immediate openings for remote digital evaluators. Flexible schedule, $350-$700/day. Message our supervisor on WhatsApp today.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Hays recruitment impersonation."
+  },
+  {
+    "id": "ML_SYNTH_058",
+    "text": "Employment Notification: You are appointed as a Regional Mystery Shopper. We will mail you a check for $2,500. Deposit it, keep $400 as your commission, and wire the rest via MoneyGram.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Classic fake check / mystery shopper scam."
+  },
+  {
+    "id": "ML_SYNTH_059",
+    "text": "Immediate online job: Complete 5 micro-tasks rating Google maps businesses, earn $150. Deposit $30 security bond to unlock the tasks. Telegram: @maps_rating_team",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Micro-task rating scam requiring security deposit."
+  },
+  {
+    "id": "ML_SYNTH_060",
+    "text": "Dear Applicant, your application for Virtual Assistant has been accepted! To receive your company-provided MacBook Pro, pay the $80 transit insurance fee at http://laptop-shipment-claim.me",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Transit insurance fee for free company equipment."
+  },
+  {
+    "id": "ML_SYNTH_061",
+    "text": "Flexible part-time opportunity: Earn $500/day testing mobile gaming applications. No technical skills required. Send a message to our recruiter on WhatsApp: +1-555-908-1122",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Game tester high daily wage lure."
+  },
+  {
+    "id": "ML_SYNTH_062",
+    "text": "We are seeking remote collaborative associates immediately. Substantial daily remuneration of $400 is guaranteed upon completion of assigned tasks. Reach our team via Telegram @remote_collab.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Formal/adversarial wording ('remuneration', 'collaborative associates') evasive fake job."
+  },
+  {
+    "id": "ML_SYNTH_063",
+    "text": "Hi Alex! Your profile on ZipRecruiter stood out. We need a remote document proofreader paying $65/hr. Contact our HR director directly on WhatsApp: +1-555-321-7788",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "ZipRecruiter pretext with high hourly proofreading wage."
+  },
+  {
+    "id": "ML_SYNTH_064",
+    "text": "Online Freelance Work: Translate short texts from English to Spanish, get paid $50 per page. To receive the document batch, pay a $25 processing deposit via PayPal Friends & Family.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Freelance translation advance-fee scam."
+  },
+  {
+    "id": "ML_SYNTH_065",
+    "text": "URGENT: 3 positions open for Remote Social Media Moderator. $300 daily earnings. Direct hiring without interview. Message @moderator_recruitment on Telegram to start today.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Social media moderator scam with Telegram handle."
+  },
+  {
+    "id": "ML_SYNTH_066",
+    "text": "Congratulations! You have been hired by Target Corp as an Online Inventory Reviewer. Please transfer $60 for your official employee security badge via Zelle to hr@target-onboarding.cc",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Employee badge fee scam impersonating Target."
+  },
+  {
+    "id": "ML_SYNTH_067",
+    "text": "Make $200-$500 every afternoon from your couch. Simple task: place fake orders on merchant sites to increase ratings. Money will be refunded with 15% bonus. WhatsApp: +1-555-889-0099",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Brushing/fake order task rebate scam."
+  },
+  {
+    "id": "ML_SYNTH_068",
+    "text": "Monster.com Alert: A recruiter from Apex Global has extended an immediate job offer for Remote Data Specialist ($45/hr). Telegram @apex_global_hr to receive paperwork.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Monster job board pretext with Telegram link."
+  },
+  {
+    "id": "ML_SYNTH_069",
+    "text": "A candidate selection has occurred for the Remote Logistics Assistant role. Prior to work allocation, a mandatory onboarding fee of $85 must be remitted.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Passive-voice adversarial job scam omitting common keywords."
+  },
+  {
+    "id": "ML_SYNTH_070",
+    "text": "Earn extra cash! Help app developers test new casino games and earn $300 daily. Payouts sent instantly in USDT. Message our HR supervisor on WhatsApp: +1-555-667-2233",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Casino game testing task lure with USDT payment."
+  },
+  {
+    "id": "ML_SYNTH_071",
+    "text": "Invest $500 today and receive guaranteed 100% returns every week. Only 3 spaces remain. Deposit USDT to activate your account.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "The exact baseline adversarial probe: guaranteed returns, FOMO, USDT deposit."
+  },
+  {
+    "id": "ML_SYNTH_072",
+    "text": "Guaranteed 200% ROI in just 48 hours! Our automated AI crypto trading bot eliminates all market risk. Deposit $250 in BTC now at http://ai-crypto-bot-yield.com",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Absurd 200% ROI claim with automated trading bot lure."
+  },
+  {
+    "id": "ML_SYNTH_073",
+    "text": "Exclusive VIP Investment Pool: Turn $1,000 into $15,000 in 7 days with zero risk. Only 2 slots available before the window closes. Contact @crypto_whale_signals on Telegram.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Turn $1k into $15k zero-risk VIP pool."
+  },
+  {
+    "id": "ML_SYNTH_074",
+    "text": "Double your Bitcoin in 24 hours! Send between 0.05 BTC and 5 BTC to our promotional giveaway address and receive 2x back immediately: bc1q8z7k0v9x5m3p1l2w4j6h8g0",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Classic crypto giveaway doubling scam."
+  },
+  {
+    "id": "ML_SYNTH_075",
+    "text": "Join our private Telegram group for 99% accurate insider Forex signals. Our expert financial guru will manage your portfolio with guaranteed daily profits of 15%.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Insider forex signals and guaranteed 15% daily profit."
+  },
+  {
+    "id": "ML_SYNTH_076",
+    "text": "Cloud Mining Opportunity: Earn fixed daily returns of 5% on your invested USDT. Automated payouts every 6 hours directly to your wallet. Sign up: http://cloud-mining-usdt.cc",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Fixed daily returns from cloud mining."
+  },
+  {
+    "id": "ML_SYNTH_077",
+    "text": "Don't miss this 100x crypto gem! The pre-sale is 95% filled. Allocate $300 today and cash out $30,000 next month. Deposit ETH to contract address 0x71C... to secure your tokens.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Presale 100x gem FOMO scam."
+  },
+  {
+    "id": "ML_SYNTH_078",
+    "text": "Risk-free arbitrage trading platform: Our smart contract exploits DEX price discrepancies to guarantee 8% profit per trade. Connect your Web3 wallet at http://arbitrage-dex-yield.net",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Arbitrage risk-free DEX wallet drainer lure."
+  },
+  {
+    "id": "ML_SYNTH_079",
+    "text": "Dear Investor, your crypto mining account balance has grown to $24,850. To withdraw your profits, a mandatory liquidity deposit of $500 is required to activate the withdrawal node.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Advance-fee / liquidity fee fake withdrawal balance."
+  },
+  {
+    "id": "ML_SYNTH_080",
+    "text": "Profits are 100% guaranteed when you trade with our certified mentor. Start with as little as $100 and receive $1,200 payout within 3 days. WhatsApp: +1-555-443-8822",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Word-order perturbation ('profits are 100% guaranteed') with mentor WhatsApp contact."
+  },
+  {
+    "id": "ML_SYNTH_081",
+    "text": "Elon Musk Crypto Giveaway: Tesla is distributing 5,000 ETH to celebrate new tech. Send 1 ETH to verify your wallet and receive 2 ETH back instantly at https://tesla-eth-giveaway.org",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Celebrity impersonation crypto doubling giveaway."
+  },
+  {
+    "id": "ML_SYNTH_082",
+    "text": "Liquidity mining pool offering 350% APY risk-free. Deposit USDT or USDC into our high-yield staking protocol today: http://high-yield-staking-vault.info",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Unrealistic 350% APY risk-free staking claim."
+  },
+  {
+    "id": "ML_SYNTH_083",
+    "text": "Special investment opportunity: Guaranteed monthly income of $4,500 on a $500 micro-investment. VIP tier closing in 3 hours. Message @wealth_master_official on Telegram.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Guaranteed income with short countdown timer."
+  },
+  {
+    "id": "ML_SYNTH_084",
+    "text": "Binary options automated robot guarantees 98% winning trades. No previous trading knowledge needed. Deposit $300 to start generating passive income: http://binary-bot-profit.net",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Binary options 98% win-rate bot."
+  },
+  {
+    "id": "ML_SYNTH_085",
+    "text": "Capital multiplication scheme: Hand over your crypto portfolio to our verified hedge fund managers. 50% weekly returns assured. Deposit Bitcoin to get started today.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Synonym variation ('capital multiplication', 'returns assured') evasive investment scam."
+  },
+  {
+    "id": "ML_SYNTH_086",
+    "text": "Guaranteed profit sharing: We trade gold futures with zero risk of loss. Minimum deposit $200. Daily payout directly to your bank account. Contact our advisor on WhatsApp.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Gold futures zero-risk guarantee."
+  },
+  {
+    "id": "ML_SYNTH_087",
+    "text": "Exclusive DeFi yield aggregator: Earn 25% weekly profit on all stablecoin deposits. Smart contract audited. Only 10 participant slots open. Link: http://defi-yield-booster.cc",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "DeFi yield booster with limited participant slots."
+  },
+  {
+    "id": "ML_SYNTH_088",
+    "text": "Hello, I am a financial advisor at Apex Capital. We are offering selected retail clients access to a private crypto trading desk with 100% capital protection and 40% monthly returns.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Unsolicited advisor offering capital protection and 40% monthly returns."
+  },
+  {
+    "id": "ML_SYNTH_089",
+    "text": "Triple your initial deposit in 5 working days! Our proprietary algorithmic trading software guarantees steady growth with zero drawdown. Deposit USDT now.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Triple deposit in 5 days with zero drawdown."
+  },
+  {
+    "id": "ML_SYNTH_090",
+    "text": "Private oil & gas micro-investment: Guaranteed payout of $1,800 every 14 days for a $250 contribution. Hurry, only 4 investor positions remaining before closing.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Commodity micro-investment with limited positions."
+  },
+  {
+    "id": "ML_SYNTH_091",
+    "text": "Receive 10x your money through our government-backed clean energy grant investment fund. 100% guaranteed returns. Wire your $500 application deposit today.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Government-backed 10x energy grant investment lure."
+  },
+  {
+    "id": "ML_SYNTH_092",
+    "text": "Crypto Arbitrage Bot v4.2: Fully automated trading generates $800 daily on autopilot. Zero experience required. Deposit 0.02 BTC to start your robot today.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Autopilot arbitrage bot promising $800 daily."
+  },
+  {
+    "id": "ML_SYNTH_093",
+    "text": "A return on capital of 80% is completely guaranteed for all participants who deposit funds into the matrix pool prior to midnight. Telegram: @matrix_yield",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Adversarial passive structure with matrix pool lure."
+  },
+  {
+    "id": "ML_SYNTH_094",
+    "text": "VIP Forex Signal Room: 96% accuracy guaranteed. Turn $500 into $5,000 this week following our live copy-trading trades. Join now at http://forex-vip-signals.net",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Forex copy-trading 96% accuracy."
+  },
+  {
+    "id": "ML_SYNTH_095",
+    "text": "Congratulations! Your wallet was randomly selected for the Binance 10th Anniversary Staking Bonus. Claim 500 USDT risk-free by depositing 50 USDT at http://binance-anniversary-claim.org",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Binance anniversary staking bonus phishing lure."
+  },
+  {
+    "id": "ML_SYNTH_096",
+    "text": "Allocate funds today to our high-frequency trading bot and watch your balance grow by 12% daily. No risk involved. Deposit cryptocurrency via our secure gateway.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Synonym variation ('allocate funds', 'grow by 12% daily')."
+  },
+  {
+    "id": "ML_SYNTH_097",
+    "text": "Passive Income Alert: Rent out your phone computing power to mine crypto and earn $45/day guaranteed. Download our mining client: http://phone-miner-payout.cc",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Phone computing mining malware/scam lure."
+  },
+  {
+    "id": "ML_SYNTH_098",
+    "text": "Zero-risk real estate crowdfunding token: Guaranteed annual dividend of 48% paid monthly in Ethereum. Reserve your spot before the round terminates at 6 PM.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Real estate token with 48% guaranteed dividend."
+  },
+  {
+    "id": "ML_SYNTH_099",
+    "text": "Financial freedom in 30 days! Our proprietary crypto matrix algorithm doubles your investment every 72 hours. Deposit USDT to start earning immediately.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Crypto matrix algorithm doubling every 72 hours."
+  },
+  {
+    "id": "ML_SYNTH_100",
+    "text": "Exclusive opportunity: Receive insider stock alerts before public market announcements. 100% win rate recorded. Message our chief analyst on WhatsApp: +1-555-223-9944",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Insider stock alerts 100% win rate."
+  },
+  {
+    "id": "ML_SYNTH_101",
+    "text": "Yield Farming Protocol: Earn 500% APY by depositing USDC into our smart pool. Zero impermanent loss guaranteed. Access protocol: http://usdc-yield-vault.me",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "500% APY yield farming zero loss claim."
+  },
+  {
+    "id": "ML_SYNTH_102",
+    "text": "Guaranteed weekly payouts of $750 for all micro-deposits of $100 or more. Limited time promotion closing in 2 hours. Reach our finance desk on Telegram: @micro_yield_desk",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Micro-deposit multiplier with closing countdown."
+  },
+  {
+    "id": "ML_SYNTH_103",
+    "text": "Guaranteed profit generated by our quantum computing trading system. Invest $350 and withdraw $2,800 after 4 days. Contact our mentor on WhatsApp.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Quantum trading system buzzword multiplier."
+  },
+  {
+    "id": "ML_SYNTH_104",
+    "text": "Urgent: Only 3 spaces remain in our VIP crypto investment group. Members receive daily signals with guaranteed 100% returns. Deposit USDT to activate.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Adversarial variation of spaces remain and guaranteed 100% returns."
+  },
+  {
+    "id": "ML_SYNTH_105",
+    "text": "Double your digital assets in 48 hours without any trading risk. Send ETH to our audited liquidity smart contract at http://eth-doubler-contract.net",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "ETH doubler contract with zero trading risk."
+  },
+  {
+    "id": "ML_SYNTH_106",
+    "text": "Your Wells Fargo security code is 391042. Do NOT share this code with anyone. Wells Fargo will NEVER call or text you to ask for this code.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Authentic bank 2FA code with explicit fraud prevention disclaimer."
+  },
+  {
+    "id": "ML_SYNTH_107",
+    "text": "Bank of America: A scheduled payment of $125.00 to City Water Dept was processed on Nov 3. View your account statement on our official mobile app or online portal.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Standard autopay confirmation directing to official app."
+  },
+  {
+    "id": "ML_SYNTH_108",
+    "text": "Chase: Your monthly credit card statement is now available. Minimum payment of $35.00 is due on Nov 24. Log in at chase.com or use the Chase app to view details.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine credit card statement notice with official domain."
+  },
+  {
+    "id": "ML_SYNTH_109",
+    "text": "Your direct deposit of $2,450.00 from Acme Payroll Corp has been credited to your checking account ending in 8831.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine payroll direct deposit confirmation."
+  },
+  {
+    "id": "ML_SYNTH_110",
+    "text": "PayPal: You sent $25.00 to Sarah Jenkins for lunch. Transaction ID: 9UX78210KL. No further action is required.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine P2P receipt confirmation."
+  },
+  {
+    "id": "ML_SYNTH_111",
+    "text": "Capital One Fraud Safety Reminder: We will never call you asking for your password, CVV, or one-time passcode. If you receive such a request, hang up and call the number on your card.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Bank security educational message containing trigger words in safe context."
+  },
+  {
+    "id": "ML_SYNTH_112",
+    "text": "Citi Alert: Your checking account balance is $1,842.10 as of 09:00 AM EST. To change your balance alert threshold, manage your notification settings in the Citi app.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine balance summary alert."
+  },
+  {
+    "id": "ML_SYNTH_113",
+    "text": "Your Netflix monthly subscription of $15.49 was successfully charged to your Visa card ending in 6029. Thank you for your continued membership.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine subscription billing receipt."
+  },
+  {
+    "id": "ML_SYNTH_114",
+    "text": "USAA: Your auto insurance policy renewal payment of $89.00 has been scheduled for Dec 1. Manage your policy anytime at usaa.com.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Insurance renewal notice with official portal."
+  },
+  {
+    "id": "ML_SYNTH_115",
+    "text": "Your Apple ID verification code is 610943. Enter this code to complete your sign in on your MacBook Pro. Never share your verification code with anyone.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Legitimate Apple ID 2FA prompt."
+  },
+  {
+    "id": "ML_SYNTH_116",
+    "text": "TD Bank: An in-store purchase of $42.15 at Whole Foods was authorized on your debit card ending in 3120 on Oct 28 at 4:32 PM.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Standard point-of-sale transaction alert without panic."
+  },
+  {
+    "id": "ML_SYNTH_117",
+    "text": "Discover: Thank you for your recent payment of $200.00 received on Oct 25. Your available credit line is now $4,800.00.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Payment acknowledgment and updated credit limit."
+  },
+  {
+    "id": "ML_SYNTH_118",
+    "text": "PNC Bank Security: Remember to periodically review your transaction history. If you notice any suspicious activity, please call the number on the back of your card.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine security advice referencing back of physical card."
+  },
+  {
+    "id": "ML_SYNTH_119",
+    "text": "Your electric utility bill for October ($78.30) has been paid via automatic bank draft. View your consumption breakdown at pge.com/myaccount.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Autopay utility confirmation."
+  },
+  {
+    "id": "ML_SYNTH_120",
+    "text": "Venmo: David sent you $15.00 for Coffee. Your Venmo balance has been updated. Tap the Venmo app to view your activity feed.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine P2P incoming funds notification."
+  },
+  {
+    "id": "ML_SYNTH_121",
+    "text": "Barclays: Your contactless card payment of 14.50 GBP at Costa Coffee was successful. Track your spending via the Barclays mobile banking app.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine merchant transaction notification."
+  },
+  {
+    "id": "ML_SYNTH_122",
+    "text": "American Express: Your annual membership reward points statement is ready. You earned 4,200 points this billing period. Log in at americanexpress.com to redeem.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Reward points summary with official website link."
+  },
+  {
+    "id": "ML_SYNTH_123",
+    "text": "Fidelity Cash Management: Your requested wire transfer of $1,000.00 to First National Bank has been initiated. Confirmation number: WIR908123.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "User-initiated wire confirmation with tracking number."
+  },
+  {
+    "id": "ML_SYNTH_124",
+    "text": "Monzo: You spent 8.20 GBP at Pret A Manger today. Total spent this week is 64.10 GBP. Check your budget breakdown in the app.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine budgeting notification from neobank."
+  },
+  {
+    "id": "ML_SYNTH_125",
+    "text": "Chase: We noticed a large purchase of $850.00 at Home Depot on card ending in 9102. Reply 1 if authorized, or reply 2 if unrecognized. We will not ask for your password.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Legitimate SMS fraud verification check with explicit 1/2 reply option."
+  },
+  {
+    "id": "ML_SYNTH_126",
+    "text": "Your gym membership auto-renewal of $45.00 was processed successfully. Thank you for being a member of Planet Fitness.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Recurring gym payment receipt."
+  },
+  {
+    "id": "ML_SYNTH_127",
+    "text": "Schwab Bank: An external transfer of $500.00 from your linked external savings account has been completed.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Inter-account ACH transfer completion alert."
+  },
+  {
+    "id": "ML_SYNTH_128",
+    "text": "Google Pay: Your receipt for Google Cloud Storage ($1.99) is ready. Manage your payment subscriptions at pay.google.com.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Cloud subscription receipt."
+  },
+  {
+    "id": "ML_SYNTH_129",
+    "text": "Security Bulletin from your Credit Union: Please be aware of telephone scams asking for your debit card PIN. Credit Union staff will never request your PIN under any circumstances.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Security bulletin highlighting common phone scams."
+  },
+  {
+    "id": "ML_SYNTH_130",
+    "text": "Zelle Payment Received: You received $50.00 from Michael Smith for Dinner. Funds are available directly in your registered bank account.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Legitimate Zelle deposit notification."
+  },
+  {
+    "id": "ML_SYNTH_131",
+    "text": "Bank of America: Your request to update your paperless statement preferences has been applied. Thank you for choosing paperless banking.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Account setting change confirmation."
+  },
+  {
+    "id": "ML_SYNTH_132",
+    "text": "Citizens Bank: Your electronic check deposit #49281 in the amount of $340.00 has been cleared and funds are available.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Mobile check deposit clearance alert."
+  },
+  {
+    "id": "ML_SYNTH_133",
+    "text": "Your Spotify Premium family plan payment of $16.99 was successfully charged to your Mastercard ending in 1904.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Music streaming monthly payment confirmation."
+  },
+  {
+    "id": "ML_SYNTH_134",
+    "text": "State Farm Insurance: Your monthly auto policy premium of $112.50 was debited via autopay. Policy documents can be viewed at statefarm.com.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Insurance autopay notice."
+  },
+  {
+    "id": "ML_SYNTH_135",
+    "text": "USPS Money Order Receipt: Your postal money order in the amount of $200.00 was issued at Station 94102. Serial number ending in 8912.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Official postal money order transaction record."
+  },
+  {
+    "id": "ML_SYNTH_136",
+    "text": "Hi Alex, thank you for applying for the Software Engineer role at Datadog. We would like to invite you to a 45-minute technical interview via Google Meet next Tuesday. Please select a time on our recruiting portal: https://careers.datadoghq.com/interview",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Standard corporate interview invitation with official career domain."
+  },
+  {
+    "id": "ML_SYNTH_137",
+    "text": "Microsoft Careers: We have received your application for Senior Product Manager (Job ID: 1049281). Our recruiting team is reviewing your qualifications and will reach out if there is a match.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Standard corporate application receipt acknowledgment."
+  },
+  {
+    "id": "ML_SYNTH_138",
+    "text": "Hi Jordan, I am a technical recruiter at Cloudflare. I came across your open source contributions on GitHub and wanted to see if you would be open to discussing our Backend Infrastructure openings ($160,000 - $195,000/year). Let me know if you have 15 minutes to chat.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Legitimate recruiter outreach with standard annual salary range."
+  },
+  {
+    "id": "ML_SYNTH_139",
+    "text": "Dear Emily, we are pleased to extend a formal offer of employment for the Data Engineer position at Salesforce. The official offer letter and benefits summary have been uploaded to your candidate portal at salesforce.wd1.myworkdayjobs.com.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Official Workday job offer notification."
+  },
+  {
+    "id": "ML_SYNTH_140",
+    "text": "Thank you for taking the time to interview with our engineering team at Figma. Although we were impressed with your background, we have decided to move forward with another candidate for this role. We wish you the best in your job search.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Professional job rejection email."
+  },
+  {
+    "id": "ML_SYNTH_141",
+    "text": "Google Recruiting: Your final round on-site interview is confirmed for Thursday at 10:00 AM PST at 1600 Amphitheatre Pkwy, Mountain View. Please review the interview preparation guide on google.com/careers.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "On-site interview confirmation with campus address."
+  },
+  {
+    "id": "ML_SYNTH_142",
+    "text": "Stanford University Career Center: Applications are now open for the Summer 2027 Research Internship Program. Stipend is $6,000 for 10 weeks. Learn more and submit your transcript at stanford.edu/internships.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "University academic internship announcement."
+  },
+  {
+    "id": "ML_SYNTH_143",
+    "text": "Hi Marcus, thank you for completing the technical take-home assessment for the Frontend Developer role. Our team will review your code submission and provide feedback within 3 business days.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Take-home code assessment status update."
+  },
+  {
+    "id": "ML_SYNTH_144",
+    "text": "LinkedIn Job Alert: 3 new matches found for 'DevOps Engineer' in New York, NY. Featured role: Bloomberg LP ($140k - $175k/year, full-time, hybrid). Apply directly on LinkedIn.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Automated LinkedIn job alert with verified employer."
+  },
+  {
+    "id": "ML_SYNTH_145",
+    "text": "HR Onboarding Notice: Welcome to Stripe! Please log into Workday to complete your Form W-4 and direct deposit authorization ahead of your first day on Monday.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Standard employee onboarding document completion."
+  },
+  {
+    "id": "ML_SYNTH_146",
+    "text": "Hi Kevin, this is Rachel from Amazon Talent Acquisition. I wanted to follow up regarding your interview last week. Are you available for a brief 10-minute phone call tomorrow afternoon to discuss next steps?",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Recruiter follow-up call request."
+  },
+  {
+    "id": "ML_SYNTH_147",
+    "text": "Indeed Application Status: Your resume was submitted to Deloitte for the Technology Consultant role (Req #89201). Track your application on indeed.com/myjobs.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Indeed application tracking notice."
+  },
+  {
+    "id": "ML_SYNTH_148",
+    "text": "Uber Engineering: Thank you for speaking with our hiring manager yesterday. We would like to schedule a system design interview session next week. Please share your availability.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "System design interview scheduling."
+  },
+  {
+    "id": "ML_SYNTH_149",
+    "text": "Notice to Employees: Annual performance reviews will begin on November 15. Please complete your self-evaluation form in Lattice by the end of next week.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Internal workplace HR performance cycle notice."
+  },
+  {
+    "id": "ML_SYNTH_150",
+    "text": "Hi Sophia, thank you for your interest in the UX Designer role at Airbnb. We have received over 200 applications and are currently reviewing candidate portfolios.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "High-volume portfolio review acknowledgment."
+  },
+  {
+    "id": "ML_SYNTH_151",
+    "text": "Target Careers: We are hiring seasonal warehouse fulfillment team members ($18.50/hour). In-person hiring events every Wednesday at our regional distribution center.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Standard hourly seasonal retail posting with realistic wage."
+  },
+  {
+    "id": "ML_SYNTH_152",
+    "text": "Greenhouse Recruiting: Your interview with the hiring panel for Senior Security Engineer at Gitlab is confirmed for Wednesday at 2:00 PM EST via Zoom.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Greenhouse ATS automated interview confirmation."
+  },
+  {
+    "id": "ML_SYNTH_153",
+    "text": "Hi David, I am an executive search consultant at Heidrick & Struggles. We are conducting a confidential search for a VP of Engineering in Boston. Let me know if you would be open to an exploratory discussion.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Executive search recruiter outreach."
+  },
+  {
+    "id": "ML_SYNTH_154",
+    "text": "Apple Recruiting: Thank you for visiting our booth at the Grace Hopper Celebration. We encourage you to submit your resume for our Hardware Engineering intern program at apple.com/jobs.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Career fair follow-up directing to official careers site."
+  },
+  {
+    "id": "ML_SYNTH_155",
+    "text": "Lever Notification: Your background check authorization for Acme Corp has been submitted to Checkr for verification. You can track progress at checkr.com/candidate.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Legitimate employer-sponsored background check through Checkr."
+  },
+  {
+    "id": "ML_SYNTH_156",
+    "text": "Hi Laura, our team at Spotify loved meeting you during the portfolio walkthrough. We would like to schedule a final chat with our Head of Design. Please provide a few slots that work for you.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Final stage design interview scheduling."
+  },
+  {
+    "id": "ML_SYNTH_157",
+    "text": "State Civil Service Commission: The public exam for Assistant Civil Engineer (Exam #4012) is scheduled for Saturday, Dec 12. Admission letters will be mailed 2 weeks prior.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Public sector civil service exam notice."
+  },
+  {
+    "id": "ML_SYNTH_158",
+    "text": "Handshake Campus Recruiting: JPMorgan Chase is hosting an online career information session for university students on Nov 8. Register on Handshake to receive the webinar link.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Handshake university campus recruitment webinar."
+  },
+  {
+    "id": "ML_SYNTH_159",
+    "text": "Jobvite: You have been scheduled for an introductory phone screen with HR for the Technical Writer position on Monday at 11:30 AM. The recruiter will call your mobile number.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Jobvite phone screening confirmation."
+  },
+  {
+    "id": "ML_SYNTH_160",
+    "text": "Internal HR Memo: Please be reminded that open enrollment for company health insurance, dental, and vision benefits ends on Friday, Nov 20. Update your elections in Workday.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Workplace benefits open enrollment memo."
+  },
+  {
+    "id": "ML_SYNTH_161",
+    "text": "Hi Sam, thank you for applying to the Marketing Specialist opening at HubSpot. We have decided to pursue candidates whose experience more closely matches our current needs.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Standard professional rejection note."
+  },
+  {
+    "id": "ML_SYNTH_162",
+    "text": "Robert Half Staffing: We are seeking an Accounts Payable Specialist for a 6-month contract with an established accounting firm in downtown Chicago ($28-$32/hr, W2). Apply at roberthalf.com.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Legitimate Robert Half staffing listing with realistic W2 hourly rate."
+  },
+  {
+    "id": "ML_SYNTH_163",
+    "text": "Korn Ferry Executive Search: Our client, a Fortune 500 manufacturing firm, is looking for a Chief Information Security Officer. Please review the attached position brief.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Legitimate executive search outreach."
+  },
+  {
+    "id": "ML_SYNTH_164",
+    "text": "Hi Megan, I am a recruiter at Pinterest. We are expanding our ML Core Infrastructure team and looking for Senior ML Engineers ($180k - $220k base). Let me know if you would like to connect.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Legitimate engineering recruiter message."
+  },
+  {
+    "id": "ML_SYNTH_165",
+    "text": "University Graduate School of Business: The MBA fall recruiting fair will host over 60 consulting and financial firms in the main auditorium tomorrow from 1:00 PM to 5:00 PM.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "University on-campus MBA career fair announcement."
+  },
+  {
+    "id": "ML_SYNTH_166",
+    "text": "Vanguard: Your quarterly retirement portfolio summary is available. Total balance in Vanguard 500 Index Fund: $48,210. Past performance is no guarantee of future results. View statement at vanguard.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Legitimate index fund statement with SEC regulatory disclaimer."
+  },
+  {
+    "id": "ML_SYNTH_167",
+    "text": "Fidelity Investments: A dividend payment of $64.20 from Apple Inc (AAPL) was reinvested into your brokerage account on Nov 1. View tax lots on fidelity.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Routine dividend reinvestment confirmation."
+  },
+  {
+    "id": "ML_SYNTH_168",
+    "text": "Charles Schwab: Your monthly account statement for October 2026 is ready for review. Access your tax documents and trade confirmations securely on schwab.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Routine monthly brokerage statement notice."
+  },
+  {
+    "id": "ML_SYNTH_169",
+    "text": "TreasuryDirect: Your purchase of 52-week US Treasury Bills in the amount of $5,000 has settled. Investment yield is 4.35% per annum. Confirmation #TD89201.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Legitimate US Treasury purchase settlement."
+  },
+  {
+    "id": "ML_SYNTH_170",
+    "text": "Empower Retirement: Your bi-weekly 401(k) employee contribution of $350.00 and employer match of $175.00 have been allocated to your target date retirement fund.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Routine 401k employer match contribution."
+  },
+  {
+    "id": "ML_SYNTH_171",
+    "text": "Morningstar Market Digest: Global equities finished mixed today as Federal Reserve officials discussed interest rate projections. Review full fund ratings at morningstar.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Financial news market summary."
+  },
+  {
+    "id": "ML_SYNTH_172",
+    "text": "Robinhood: Your limit order to buy 10 shares of Microsoft (MSFT) at $415.00 was executed at 10:14 AM EST. View your order confirmation in the Robinhood app.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Brokerage trade execution confirmation."
+  },
+  {
+    "id": "ML_SYNTH_173",
+    "text": "E*TRADE: Your Certificate of Deposit (CD) with 12-month maturity will mature on Dec 15. Please review your renewal preferences or rollover options on etrade.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "CD maturity renewal notice."
+  },
+  {
+    "id": "ML_SYNTH_174",
+    "text": "BlackRock iShares: Important shareholder notice regarding updated prospectus materials for iShares Core S&P 500 ETF (IVV). Read the prospectus carefully before investing.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "SEC required prospectus distribution."
+  },
+  {
+    "id": "ML_SYNTH_175",
+    "text": "Wealthfront: Your automated taxable portfolio was rebalanced today to maintain your target asset allocation. No tax liability was incurred during this rebalance.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Robo-advisor rebalance summary."
+  },
+  {
+    "id": "ML_SYNTH_176",
+    "text": "Betterment: Your recurring monthly deposit of $200.00 into your High-Yield Cash Account (4.75% APY, FDIC insured) has cleared.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "High-yield cash account deposit with FDIC disclosure."
+  },
+  {
+    "id": "ML_SYNTH_177",
+    "text": "Marcus by Goldman Sachs: Your certificate of deposit interest payment of $38.50 was deposited into your linked online savings account.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Interest payout from FDIC insured bank."
+  },
+  {
+    "id": "ML_SYNTH_178",
+    "text": "Merrill Edge: Form 1099-B and consolidated tax summary for the prior tax year are now accessible in your online document center at merrilledge.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Annual brokerage tax document availability."
+  },
+  {
+    "id": "ML_SYNTH_179",
+    "text": "Coinbase: You successfully bought $50.00 worth of Bitcoin (0.00078 BTC). Your assets are stored in your Coinbase account. Learn how to secure your account at coinbase.com/security.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Legitimate crypto exchange small purchase receipt."
+  },
+  {
+    "id": "ML_SYNTH_180",
+    "text": "T. Rowe Price: Your Roth IRA automatic contribution of $250.00 was invested into T. Rowe Price Blue Chip Growth Fund. View fund holdings at troweprice.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Roth IRA automatic monthly contribution."
+  },
+  {
+    "id": "ML_SYNTH_181",
+    "text": "Wall Street Journal Financial Alert: S&P 500 up 0.4%, Nasdaq gains 0.6% following tech sector earnings reports. Treasury yields hold steady.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Financial journalism market index update."
+  },
+  {
+    "id": "ML_SYNTH_182",
+    "text": "Interactive Brokers: Margin report for account U890214. Your current margin cushion is 34.2%. Margin requirements are subject to change without notice.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Brokerage margin report notice."
+  },
+  {
+    "id": "ML_SYNTH_183",
+    "text": "Schwab Intelligent Portfolios: Your quarterly advisory fee of $0.00 (commission-free portfolio management) was recorded for the period ending September 30.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Advisory fee reporting."
+  },
+  {
+    "id": "ML_SYNTH_184",
+    "text": "Vanguard Digital Advisor: Annual portfolio review scheduled. Check whether your current risk tolerance setting aligns with your anticipated retirement timeline.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Retirement goal alignment review."
+  },
+  {
+    "id": "ML_SYNTH_185",
+    "text": "FINRA Investor Alert: Be wary of unregistered individuals offering high-yield investments. Always check broker credentials using BrokerCheck at brokercheck.finra.org.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Regulatory investor protection advisory."
+  },
+  {
+    "id": "ML_SYNTH_186",
+    "text": "Fidelity: A proxy voting ballot for the upcoming Tesla Inc annual shareholder meeting has been delivered to your online proxy center.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Shareholder proxy ballot notification."
+  },
+  {
+    "id": "ML_SYNTH_187",
+    "text": "Principal Financial: Your retirement plan distribution request of $1,200.00 has been reviewed and approved for direct deposit. Estimated arrival in 2-3 business days.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Retirement plan approved distribution notice."
+  },
+  {
+    "id": "ML_SYNTH_188",
+    "text": "Barron's Weekly Investment Outlook: Analyzing municipal bond yields and defensive utility stocks amid changing monetary policy. Read full analysis at barrons.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Financial commentary magazine overview."
+  },
+  {
+    "id": "ML_SYNTH_189",
+    "text": "Kraken: Your recurring weekly DCA purchase of $25.00 in Ethereum has been executed. Transaction fee: $0.35. Manage recurring buys in your account settings.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Recurring DCA crypto purchase."
+  },
+  {
+    "id": "ML_SYNTH_190",
+    "text": "SEC Investor Bulletin: Understanding compound interest and long-term index investing. Diversification does not assure profit or protect against loss in declining markets.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "SEC educational bulletin on compound interest."
+  },
+  {
+    "id": "ML_SYNTH_191",
+    "text": "UPS Tracking: Your package from Nordstrom with tracking number 1Z9999999999999999 is scheduled for delivery today between 1:00 PM and 4:30 PM.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Legitimate package delivery notification with standard tracking."
+  },
+  {
+    "id": "ML_SYNTH_192",
+    "text": "Hi Daniel, confirming your dental cleaning appointment with Dr. Henderson tomorrow at 10:30 AM. Reply C to confirm or call 555-0199 to reschedule.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Medical appointment reminder."
+  },
+  {
+    "id": "ML_SYNTH_193",
+    "text": "Hey Chris, let me know if you are free for dinner tonight at 7. Mario and Elena are coming over too.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Casual everyday friend conversation."
+  },
+  {
+    "id": "ML_SYNTH_194",
+    "text": "Delta Air Lines: Flight DL 1492 from Atlanta to Boston is boarding at Gate B18. Please have your digital boarding pass ready.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Airline gate boarding update."
+  },
+  {
+    "id": "ML_SYNTH_195",
+    "text": "Public Library Notice: The book 'Clean Architecture by Robert C. Martin' is due on Friday, Nov 12. Renew online at library.city.gov.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Public library book due reminder."
+  },
+  {
+    "id": "ML_SYNTH_196",
+    "text": "Uber: Your driver Carlos is 2 minutes away in a silver Toyota Camry (License Plate: 7XYZ890). Please meet at the designated pickup zone.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Rideshare driver arrival alert."
+  },
+  {
+    "id": "ML_SYNTH_197",
+    "text": "Acme SaaS: Your weekly project sprint report is ready. 14 tasks completed, 2 blockers resolved. View dashboard at app.acmeprojects.io.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Project management SaaS automated report."
+  },
+  {
+    "id": "ML_SYNTH_198",
+    "text": "Hi Dad, I landed safely in Chicago. Taking the train to the hotel now. Talk to you soon!",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Personal family travel check-in."
+  },
+  {
+    "id": "ML_SYNTH_199",
+    "text": "Toyota Service Center: Your scheduled 30,000-mile maintenance check for your RAV4 is complete and your vehicle is ready for pickup.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Car maintenance service completion notice."
+  },
+  {
+    "id": "ML_SYNTH_200",
+    "text": "Good morning team, the quarterly all-hands meeting will be broadcast on Zoom at 2:00 PM EST. Slido link for Q&A has been posted in Slack.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Workplace company all-hands invitation."
+  },
+  {
+    "id": "ML_SYNTH_201",
+    "text": "CVS Pharmacy: Your prescription #98214 is ready for pickup at the 4th Street pharmacy drive-thru.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Pharmacy prescription pickup alert."
+  },
+  {
+    "id": "ML_SYNTH_202",
+    "text": "DoorDash: Your order from Thai Basil has been picked up by your Dasher and is on its way to your address. Track delivery in the app.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Food delivery tracking notice."
+  },
+  {
+    "id": "ML_SYNTH_203",
+    "text": "Weather Alert from National Weather Service: Flash Flood Watch in effect for King County from 6:00 PM this evening through tomorrow morning.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Government weather advisory."
+  },
+  {
+    "id": "ML_SYNTH_204",
+    "text": "Hi Sarah, thanks for returning my lawnmower. Let me know if you need to borrow any gardening tools next weekend.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Neighbor casual communication."
+  },
+  {
+    "id": "ML_SYNTH_205",
+    "text": "GitHub: A new comment was posted on Pull Request #42 in repository Quantumdata66/Scamcheck by user @developer.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "GitHub automated repository notification."
+  },
+  {
+    "id": "ML_SYNTH_206",
+    "text": "School District 104: Classes will be dismissed 1 hour early on Wednesday for teacher professional development workshops.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "School district scheduling announcement."
+  },
+  {
+    "id": "ML_SYNTH_207",
+    "text": "Marriott Bonvoy: We look forward to welcoming you to Seattle Marriott Waterfront on Friday, Nov 18. Check-in begins at 4:00 PM.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Hotel reservation check-in reminder."
+  },
+  {
+    "id": "ML_SYNTH_208",
+    "text": "Veterinary Clinic: Reminder that Max is due for his annual rabies vaccination and wellness exam next Tuesday at 3:15 PM.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Pet wellness appointment reminder."
+  },
+  {
+    "id": "ML_SYNTH_209",
+    "text": "Zoom Calendar: Reminder for 'Weekly Engineering Standup' starting in 10 minutes at 9:00 AM PST.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Calendar meeting alert."
+  },
+  {
+    "id": "ML_SYNTH_210",
+    "text": "City Water Dept: Routine water main maintenance is scheduled in your neighborhood on Thursday from 9 AM to 1 PM. Service interruptions may occur.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Municipal utility maintenance notification."
+  }
+]

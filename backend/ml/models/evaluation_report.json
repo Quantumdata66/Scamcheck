@@ -1,0 +1,162 @@
+{
+  "held_out_test_split": {
+    "dataset_name": "Held-Out Synthetic Test Partition",
+    "sample_count": 42,
+    "accuracy": 0.9761904761904762,
+    "classification_report": {
+      "legitimate": {
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1-score": 0.9767441860465116,
+        "support": 21.0
+      },
+      "scam": {
+        "precision": 1.0,
+        "recall": 0.9523809523809523,
+        "f1-score": 0.975609756097561,
+        "support": 21.0
+      },
+      "accuracy": 0.9761904761904762,
+      "macro avg": {
+        "precision": 0.9772727272727273,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9761769710720363,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.9772727272727273,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9761769710720362,
+        "support": 42.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        21,
+        0
+      ],
+      [
+        1,
+        20
+      ]
+    ],
+    "misclassifications": [
+      {
+        "id": "ML_SYNTH_005",
+        "text": "URGENT NOTICE: Your debit card ending in 4108 has been temporarily restricted. Enter your PIN and card security code at https://secure-bank-reactivate.cc to restore access.",
+        "true_label": "scam",
+        "predicted_label": "legitimate",
+        "p_scam": 0.48938273208665306,
+        "category": "bank_payment",
+        "notes": "Direct harvesting of debit card PIN and CVV."
+      }
+    ]
+  },
+  "external_benchmark_fixture": {
+    "dataset_name": "Isolated Benchmark Fixture (evaluation_fixture.json)",
+    "sample_count": 37,
+    "accuracy": 0.8108108108108109,
+    "classification_report": {
+      "legitimate": {
+        "precision": 0.7333333333333333,
+        "recall": 0.7857142857142857,
+        "f1-score": 0.7586206896551724,
+        "support": 14.0
+      },
+      "scam": {
+        "precision": 0.8636363636363636,
+        "recall": 0.8260869565217391,
+        "f1-score": 0.8444444444444444,
+        "support": 23.0
+      },
+      "accuracy": 0.8108108108108109,
+      "macro avg": {
+        "precision": 0.7984848484848485,
+        "recall": 0.8059006211180124,
+        "f1-score": 0.8015325670498084,
+        "support": 37.0
+      },
+      "weighted avg": {
+        "precision": 0.8143325143325143,
+        "recall": 0.8108108108108109,
+        "f1-score": 0.8119705912809361,
+        "support": 37.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        11,
+        3
+      ],
+      [
+        4,
+        19
+      ]
+    ],
+    "misclassifications": [
+      {
+        "id": "BENIGN_010",
+        "text": "For full API documentation and integration guides, please visit our developer portal at https://developer.acme.com/docs.",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "p_scam": 0.5859963407998293,
+        "category": null,
+        "notes": "Legitimate technical documentation link without urgency or scam context."
+      },
+      {
+        "id": "ADVERSARIAL_SYNONYM_002",
+        "text": "Acquire immense remuneration of 500 USD each morning by completing uncomplicated phone evaluations with nil prerequisites.",
+        "true_label": "scam",
+        "predicted_label": "legitimate",
+        "p_scam": 0.4836653533910021,
+        "category": "fake_job",
+        "notes": "Tests archaic/uncommon synonyms: 'immense remuneration', 'uncomplicated phone evaluations', 'nil prerequisites'."
+      },
+      {
+        "id": "ADVERSARIAL_PASSIVE_INDIRECT_001",
+        "text": "A temporary restriction has been instituted regarding your card. Submission of the security verification number is requested to lift this constraint.",
+        "true_label": "scam",
+        "predicted_label": "legitimate",
+        "p_scam": 0.4278838153106407,
+        "category": "bank_payment",
+        "notes": "Tests passive academic voice without standard imperative verbs ('submission is requested')."
+      },
+      {
+        "id": "ADVERSARIAL_PASSIVE_INDIRECT_002",
+        "text": "Upon receipt of $50 for onboarding administrative processing, the work-from-home computing equipment will be dispatched.",
+        "true_label": "scam",
+        "predicted_label": "legitimate",
+        "p_scam": 0.4706291270075584,
+        "category": "fake_job",
+        "notes": "Tests indirect passive phrasing for upfront job equipment fee."
+      },
+      {
+        "id": "ADVERSARIAL_WEAK_STACK_001",
+        "text": "Dear Customer, please message us on WhatsApp if you have any questions regarding your upcoming appointment.",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "p_scam": 0.5579542424168589,
+        "category": null,
+        "notes": "Tests combination of two weak signals (generic greeting + WhatsApp) without any threat, fee, or financial scam cues."
+      },
+      {
+        "id": "ADVERSARIAL_WEAK_STACK_002",
+        "text": "Attention User, please click the link below to view our updated terms of service: https://acme.org/terms",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "p_scam": 0.5670004611322198,
+        "category": null,
+        "notes": "Tests generic greeting + standard policy link without urgent threats or credential harvesting."
+      },
+      {
+        "id": "ADVERSARIAL_SPACING_CASING_001",
+        "text": "   u R g E n T   :   Y O U R   B A N K   A C C O U N T   I S   L O C K E D !   R E P L Y   W I T H   O T P   N O W !   ",
+        "true_label": "scam",
+        "predicted_label": "legitimate",
+        "p_scam": 0.48059489521826293,
+        "category": "bank_payment",
+        "notes": "Tests spaced single-letter words and mixed capitalization."
+      }
+    ]
+  }
+}
