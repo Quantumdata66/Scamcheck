@@ -74,6 +74,7 @@ backend/ml/
 | **Training Source** | Handcrafted Regex | Synthetic Short ($N=168$) | Synthetic Short ($N=168$) | EMSCAD Long ($N=11,340$) |
 | **Feature Analyzer** | Rule Matching | Word (1–2), Max 2.5k | Char-WB (3–5), Max 5k | Word (1–1), Max 10k |
 | **Held-Out Test Accuracy** | N/A | **97.62%** ($N=42$) | 90.48% ($N=42$) | **97.41%** ($N=2,431$) |
+| **Held-Out Scam Recall** | N/A | **95.24%** (20/21) | 85.71% (18/21) | **86.11%** (93/108) |
 | **Held-Out Scam-F1** | N/A | **0.9756** | 0.9000 | **0.7470** |
 | **Held-Out Scam PR-AUC** | N/A | N/A (Balanced) | N/A (Balanced) | **0.8616** |
 | **Short Benchmark Accuracy ($N=37$)** | 59.46% (3-tier) | **81.08%** | **81.08%** | **51.35%** (Out-of-domain) |
