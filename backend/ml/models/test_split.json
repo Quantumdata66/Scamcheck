@@ -1,0 +1,338 @@
+[
+  {
+    "id": "ML_SYNTH_073",
+    "text": "Exclusive VIP Investment Pool: Turn $1,000 into $15,000 in 7 days with zero risk. Only 2 slots available before the window closes. Contact @crypto_whale_signals on Telegram.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Turn $1k into $15k zero-risk VIP pool."
+  },
+  {
+    "id": "ML_SYNTH_012",
+    "text": "Monzo: We noticed anomalous transaction patterns on your virtual card. Please authenticate your full card number and expiration date at https://monzo-support-sec.com",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Card detail solicitation using security buzzwords."
+  },
+  {
+    "id": "ML_SYNTH_033",
+    "text": "Financial Security: Verification is required to be performed within 60 minutes or all linked accounts shall be permanently suspended. Visit https://auth-ebank-secure.cc",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Passive-voice adversarial formulation of urgent account suspension."
+  },
+  {
+    "id": "ML_SYNTH_208",
+    "text": "Veterinary Clinic: Reminder that Max is due for his annual rabies vaccination and wellness exam next Tuesday at 3:15 PM.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Pet wellness appointment reminder."
+  },
+  {
+    "id": "ML_SYNTH_135",
+    "text": "USPS Money Order Receipt: Your postal money order in the amount of $200.00 was issued at Station 94102. Serial number ending in 8912.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Official postal money order transaction record."
+  },
+  {
+    "id": "ML_SYNTH_129",
+    "text": "Security Bulletin from your Credit Union: Please be aware of telephone scams asking for your debit card PIN. Credit Union staff will never request your PIN under any circumstances.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Security bulletin highlighting common phone scams."
+  },
+  {
+    "id": "ML_SYNTH_120",
+    "text": "Venmo: David sent you $15.00 for Coffee. Your Venmo balance has been updated. Tap the Venmo app to view your activity feed.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine P2P incoming funds notification."
+  },
+  {
+    "id": "ML_SYNTH_037",
+    "text": "Congratulations! Your resume has been shortlisted for the Remote Data Entry role. Daily salary is $200-$400. No experience needed. Contact @recruiter_jenny on Telegram now.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "No-experience high daily wage job directing to Telegram."
+  },
+  {
+    "id": "ML_SYNTH_199",
+    "text": "Toyota Service Center: Your scheduled 30,000-mile maintenance check for your RAV4 is complete and your vehicle is ready for pickup.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Car maintenance service completion notice."
+  },
+  {
+    "id": "ML_SYNTH_127",
+    "text": "Schwab Bank: An external transfer of $500.00 from your linked external savings account has been completed.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Inter-account ACH transfer completion alert."
+  },
+  {
+    "id": "ML_SYNTH_005",
+    "text": "URGENT NOTICE: Your debit card ending in 4108 has been temporarily restricted. Enter your PIN and card security code at https://secure-bank-reactivate.cc to restore access.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Direct harvesting of debit card PIN and CVV."
+  },
+  {
+    "id": "ML_SYNTH_192",
+    "text": "Hi Daniel, confirming your dental cleaning appointment with Dr. Henderson tomorrow at 10:30 AM. Reply C to confirm or call 555-0199 to reschedule.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Medical appointment reminder."
+  },
+  {
+    "id": "ML_SYNTH_081",
+    "text": "Elon Musk Crypto Giveaway: Tesla is distributing 5,000 ETH to celebrate new tech. Send 1 ETH to verify your wallet and receive 2 ETH back instantly at https://tesla-eth-giveaway.org",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Celebrity impersonation crypto doubling giveaway."
+  },
+  {
+    "id": "ML_SYNTH_034",
+    "text": "Debit Card Advisory: A charge of $680.00 from Dubai Luxury Hotel was flagged. Cancel this transaction by providing your mobile 2FA code at http://card-fraud-dispute.me",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Foreign transaction panic soliciting 2FA passcode."
+  },
+  {
+    "id": "ML_SYNTH_103",
+    "text": "Guaranteed profit generated by our quantum computing trading system. Invest $350 and withdraw $2,800 after 4 days. Contact our mentor on WhatsApp.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Quantum trading system buzzword multiplier."
+  },
+  {
+    "id": "ML_SYNTH_035",
+    "text": "URGENT: Your bank account will be frozen within 2 hours. Move all remaining funds to our secure Federal Reserve reserve wallet to safeguard your capital.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Asset freeze threat with safe wallet redirection."
+  },
+  {
+    "id": "ML_SYNTH_107",
+    "text": "Bank of America: A scheduled payment of $125.00 to City Water Dept was processed on Nov 3. View your account statement on our official mobile app or online portal.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Standard autopay confirmation directing to official app."
+  },
+  {
+    "id": "ML_SYNTH_201",
+    "text": "CVS Pharmacy: Your prescription #98214 is ready for pickup at the 4th Street pharmacy drive-thru.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Pharmacy prescription pickup alert."
+  },
+  {
+    "id": "ML_SYNTH_007",
+    "text": "Security Dept: Unusual login attempt detected on your mobile banking app. Tap https://online-auth-verification.com/login to confirm your username and master password.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Generic bank login harvesting via generic suspicious URL."
+  },
+  {
+    "id": "ML_SYNTH_158",
+    "text": "Handshake Campus Recruiting: JPMorgan Chase is hosting an online career information session for university students on Nov 8. Register on Handshake to receive the webinar link.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Handshake university campus recruitment webinar."
+  },
+  {
+    "id": "ML_SYNTH_193",
+    "text": "Hey Chris, let me know if you are free for dinner tonight at 7. Mario and Elena are coming over too.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Casual everyday friend conversation."
+  },
+  {
+    "id": "ML_SYNTH_008",
+    "text": "Revolut Alert: Your account will be terminated within 24 hours due to unconfirmed KYC details. Complete your biometric and passport verification here: http://revolut-kyc-desk.org",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Urgent deadline threat targeting KYC and identity documents."
+  },
+  {
+    "id": "ML_SYNTH_177",
+    "text": "Marcus by Goldman Sachs: Your certificate of deposit interest payment of $38.50 was deposited into your linked online savings account.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Interest payout from FDIC insured bank."
+  },
+  {
+    "id": "ML_SYNTH_023",
+    "text": "Notice: An unverified refund of $249.00 has been sent to your bank. To claim this refund, confirm your account number and card CVV at http://refund-secure-portal.com",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Overpayment/refund lure harvesting CVV."
+  },
+  {
+    "id": "ML_SYNTH_101",
+    "text": "Yield Farming Protocol: Earn 500% APY by depositing USDC into our smart pool. Zero impermanent loss guaranteed. Access protocol: http://usdc-yield-vault.me",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "500% APY yield farming zero loss claim."
+  },
+  {
+    "id": "ML_SYNTH_062",
+    "text": "We are seeking remote collaborative associates immediately. Substantial daily remuneration of $400 is guaranteed upon completion of assigned tasks. Reach our team via Telegram @remote_collab.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Formal/adversarial wording ('remuneration', 'collaborative associates') evasive fake job."
+  },
+  {
+    "id": "ML_SYNTH_088",
+    "text": "Hello, I am a financial advisor at Apex Capital. We are offering selected retail clients access to a private crypto trading desk with 100% capital protection and 40% monthly returns.",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Unsolicited advisor offering capital protection and 40% monthly returns."
+  },
+  {
+    "id": "ML_SYNTH_198",
+    "text": "Hi Dad, I landed safely in Chicago. Taking the train to the hotel now. Talk to you soon!",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Personal family travel check-in."
+  },
+  {
+    "id": "ML_SYNTH_102",
+    "text": "Guaranteed weekly payouts of $750 for all micro-deposits of $100 or more. Limited time promotion closing in 2 hours. Reach our finance desk on Telegram: @micro_yield_desk",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Micro-deposit multiplier with closing countdown."
+  },
+  {
+    "id": "ML_SYNTH_028",
+    "text": "Payment Notice: A direct debit of $512.00 from Amazon Marketplace is scheduled for today. To stop this charge, click http://dispute-amazon-charge.net immediately.",
+    "label": "scam",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "E-commerce direct debit dispute lure."
+  },
+  {
+    "id": "ML_SYNTH_072",
+    "text": "Guaranteed 200% ROI in just 48 hours! Our automated AI crypto trading bot eliminates all market risk. Deposit $250 in BTC now at http://ai-crypto-bot-yield.com",
+    "label": "scam",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Absurd 200% ROI claim with automated trading bot lure."
+  },
+  {
+    "id": "ML_SYNTH_143",
+    "text": "Hi Marcus, thank you for completing the technical take-home assessment for the Frontend Developer role. Our team will review your code submission and provide feedback within 3 business days.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Take-home code assessment status update."
+  },
+  {
+    "id": "ML_SYNTH_048",
+    "text": "Work from home full time or part time! Earn $80/hr doing simple copy-paste tasks. No qualifications or resume required. Immediate start. Telegram: @online_remote_jobs_hr",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Copy-paste easy work lure with Telegram channel."
+  },
+  {
+    "id": "ML_SYNTH_126",
+    "text": "Your gym membership auto-renewal of $45.00 was processed successfully. Thank you for being a member of Planet Fitness.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Recurring gym payment receipt."
+  },
+  {
+    "id": "ML_SYNTH_044",
+    "text": "Job Offer: Remote customer service assistant. Salary $4,200/month. To finalize your employment contract, wire $120 for courier delivery of your company laptop and welcome package.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Courier fee advance-payment job scam."
+  },
+  {
+    "id": "ML_SYNTH_180",
+    "text": "T. Rowe Price: Your Roth IRA automatic contribution of $250.00 was invested into T. Rowe Price Blue Chip Growth Fund. View fund holdings at troweprice.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Roth IRA automatic monthly contribution."
+  },
+  {
+    "id": "ML_SYNTH_188",
+    "text": "Barron's Weekly Investment Outlook: Analyzing municipal bond yields and defensive utility stocks amid changing monetary policy. Read full analysis at barrons.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Financial commentary magazine overview."
+  },
+  {
+    "id": "ML_SYNTH_166",
+    "text": "Vanguard: Your quarterly retirement portfolio summary is available. Total balance in Vanguard 500 Index Fund: $48,210. Past performance is no guarantee of future results. View statement at vanguard.com.",
+    "label": "legitimate",
+    "category": "investment",
+    "source_type": "synthetic",
+    "notes": "Legitimate index fund statement with SEC regulatory disclaimer."
+  },
+  {
+    "id": "ML_SYNTH_108",
+    "text": "Chase: Your monthly credit card statement is now available. Minimum payment of $35.00 is due on Nov 24. Log in at chase.com or use the Chase app to view details.",
+    "label": "legitimate",
+    "category": "bank_payment",
+    "source_type": "synthetic",
+    "notes": "Routine credit card statement notice with official domain."
+  },
+  {
+    "id": "ML_SYNTH_194",
+    "text": "Delta Air Lines: Flight DL 1492 from Atlanta to Boston is boarding at Gate B18. Please have your digital boarding pass ready.",
+    "label": "legitimate",
+    "category": null,
+    "source_type": "synthetic",
+    "notes": "Airline gate boarding update."
+  },
+  {
+    "id": "ML_SYNTH_157",
+    "text": "State Civil Service Commission: The public exam for Assistant Civil Engineer (Exam #4012) is scheduled for Saturday, Dec 12. Admission letters will be mailed 2 weeks prior.",
+    "label": "legitimate",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Public sector civil service exam notice."
+  },
+  {
+    "id": "ML_SYNTH_041",
+    "text": "Dear Candidate, you have been selected for the Data Analyst role at Apex Tech without an interview. Please transfer the $95 background screening fee via Zelle to complete registration.",
+    "label": "scam",
+    "category": "fake_job",
+    "source_type": "synthetic",
+    "notes": "Direct hire requiring advance background check payment."
+  }
+]

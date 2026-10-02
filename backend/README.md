@@ -1,15 +1,14 @@
 # ScamCheck Backend API
 
-FastAPI backend and detection service for the ScamCheck capstone project.
+FastAPI backend service and detection engine for the ScamCheck application.
 
 ---
 
 ## Overview
 
-The ScamCheck backend provides an automated API for analyzing suspicious text messages. It evaluates messages for indicators of common scams (e.g., bank impersonation, fake job offers, investment fraud) and returns a structured, cautious risk assessment with contextual indicators and actionable safety guidance.
+The ScamCheck backend provides an explainable API for evaluating suspicious text messages. It analyzes incoming text for warning signs across three primary threat domains (bank impersonation, fake job offers, and investment scams), classifies the risk level into one of three tiers (`low`, `needs_verification`, or `high`), and returns actionable safety advice.
 
-> **Important Architectural Notice:**  
-> The detection engine in this foundation release uses a **placeholder service stub** (`PlaceholderDetector`). The API routing, Pydantic validation, CORS middleware, and response contracts are fully established and tested, but the actual rules-based baseline and machine learning classifiers have not yet been plugged in.
+The production service uses a deterministic rules engine ([`RulesBaselineDetector`](app/services/detector.py)) with zero inference latency. Machine learning experiments are maintained as standalone research artifacts in [`ml/`](ml/README.md).
 
 ---
 
@@ -19,7 +18,7 @@ The ScamCheck backend provides an automated API for analyzing suspicious text me
 backend/
 ├── app/
 │   ├── __init__.py           # Package marker
-│   ├── main.py               # FastAPI application entry point & CORS configuration
+│   ├── main.py               # FastAPI application factory and CORS configuration
 │   ├── schemas.py            # Pydantic request and response models
 │   ├── routes/
 │   │   ├── __init__.py       # Routes package marker
@@ -27,13 +26,26 @@ backend/
 │   │   └── check.py          # POST /check endpoint
 │   └── services/
 │       ├── __init__.py       # Services package marker
-│       └── detector.py       # Detection service interface & placeholder implementation
-├── tests/
-│   ├── __init__.py           # Tests package marker
-│   ├── test_health.py        # Health endpoint automated tests
-│   └── test_check.py         # Check endpoint validation & response contract tests
-├── requirements.txt          # Python package dependencies
-└── README.md                 # Backend documentation
+│       ├── detector.py       # RulesBaselineDetector implementation
+│       ├── guidance.py       # Explanation and safety guidance generator
+│       ├── normalization.py  # Text cleaning and URL extraction
+│       └── rules.py          # Regex indicator taxonomy and 2FA guards
+├── data/                     # Datasets and benchmark fixtures
+│   ├── evaluation_fixture.json
+│   ├── external/emscad/
+│   └── ml/
+├── ml/                       # Standalone machine learning experiments (Exp 01, 02, 03)
+├── tests/                    # Automated test suites (88 tests)
+│   ├── test_adversarial.py
+│   ├── test_check.py
+│   ├── test_detector.py
+│   ├── test_emscad_evaluation.py
+│   ├── test_emscad_experiment03.py
+│   └── test_health.py
+├── requirements.txt          # Backend Python dependencies
+├── BASELINE_DETECTOR.md      # Rules engine specification
+├── DETECTION_SPEC.md         # Indicator taxonomy definition
+└── README.md                 # Backend documentation (This file)
 ```
 
 ---
@@ -47,7 +59,7 @@ backend/
 
 ### 2. Create and Activate a Virtual Environment
 
-From the repository root or inside the `backend` directory:
+From inside the `backend` directory:
 
 ```bash
 # Navigate to backend directory
@@ -57,12 +69,9 @@ cd backend
 python -m venv .venv
 
 # Activate on Windows (PowerShell)
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 
-# Activate on Windows (Command Prompt)
-.venv\Scripts\activate.bat
-
-# Activate on macOS/Linux
+# Activate on macOS or Linux
 source .venv/bin/activate
 ```
 
@@ -76,36 +85,37 @@ pip install -r requirements.txt
 
 ## Running the Development Server
 
-Start the FastAPI server using Uvicorn:
+Start the FastAPI development server with Uvicorn:
 
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
 
-- API Base URL: `http://localhost:8000`
-- Interactive OpenAPI Docs (Swagger UI): `http://localhost:8000/docs`
+- Local API Base URL: `http://localhost:8000`
+- Interactive Swagger UI: `http://localhost:8000/docs`
 - ReDoc API Documentation: `http://localhost:8000/redoc`
 
 ---
 
 ## Running Automated Tests
 
-Run the test suite using `pytest` from the `backend/` directory:
+Run the complete backend test suite using `pytest`:
 
 ```bash
-# Ensure you are inside the backend/ directory with the virtual environment activated
-pytest -v
+# Run all tests with verbose output
+pytest tests -v
 ```
+
+Current test coverage: **88 / 88 tests passing** (0 failures).
 
 ---
 
-## API Endpoints
+## API Reference
 
 ### 1. Health Check
 
 - **Method:** `GET`
 - **Path:** `/health`
-- **Description:** Verifies that the API service is up and operational.
 - **Response (`200 OK`):**
   ```json
   {
@@ -120,43 +130,47 @@ pytest -v
 
 - **Method:** `POST`
 - **Path:** `/check`
-- **Description:** Validates and analyzes a suspicious text message.
 - **Request Headers:** `Content-Type: application/json`
 - **Request Body:**
   ```json
   {
-    "message": "URGENT: Your account has been suspended. Click here to confirm identity."
+    "text": "URGENT: Your debit card has been blocked. Reply with your OTP immediately to restore access."
   }
   ```
-- **Validation Rules:**
-  - `message` is required and must be a string.
-  - `message` must not be empty or contain only whitespace.
-  - `message` maximum length: `2000` characters.
+  *Note: The field name `"message"` is also accepted as an alternative to `"text"`.*
+
+- **Validation Constraints:**
+  - `text` or `message` is required.
+  - Input cannot be empty or contain only whitespace.
+  - Maximum length: 2,000 characters.
+
 - **Response Body (`200 OK`):**
   ```json
   {
-    "risk_level": "needs_verification",
-    "risk_label": "Needs further verification",
-    "summary": "Message received and pending full detection pipeline processing.",
-    "category": null,
-    "explanation": "This assessment was generated by the backend foundation placeholder...",
+    "risk_level": "high",
+    "risk_label": "Multiple warning signs detected",
+    "summary": "This message exhibits strong warning signs commonly associated with bank or payment impersonation.",
+    "category": "bank_payment",
+    "explanation": "This message was flagged because it solicits sensitive credentials (such as PINs, passwords, or one-time security codes) and it applies artificial pressure threatening account suspension or immediate penalties...",
     "indicators": [
-      "Detection pipeline placeholder active"
+      "Request for sensitive credentials or security codes",
+      "Urgent request for account action"
     ],
     "safety_guidance": [
-      "Verify the sender independently through official contact channels.",
-      "Never share sensitive personal credentials, OTPs, or passwords.",
-      "Do not click links or send funds when unsure about a message's legitimacy."
+      "Contact your bank directly using the official number on the back of your card or via their verified app.",
+      "Never share one-time passcodes (OTPs), PINs, or online banking passwords with anyone.",
+      "Do not transfer money to 'safe' or 'holding' accounts under any circumstances."
     ]
   }
   ```
+
 - **Error Response (`422 Unprocessable Entity`):**
-  Returned if input validation fails (e.g., whitespace-only text or message exceeding 2000 characters).
+  Returned if input validation fails (e.g. whitespace-only text or input exceeding 2,000 characters).
 
 ---
 
-## Current Limitations
+## Operational Boundaries
 
-1. **Placeholder Detection:** Real heuristic scoring and ML inference are not yet active; all valid requests currently receive the baseline contract response.
-2. **Detection-Only Scope:** The service does not trace live URL destinations, crawl web pages, or guarantee message safety.
-3. **Local CORS:** Configured specifically for local frontend development on `localhost:5173`, `localhost:3000`, etc.
+1. **Text-Only Pattern Matching:** The backend analyzes only the text content provided. It does not perform active network requests, DNS lookups, or URL fetching.
+2. **Stateless Processing:** Incoming messages are processed in-memory during the request lifecycle. The backend maintains no database storage or persistent message logs.
+3. **Decision Support:** Outputs provide automated risk indicators to aid vigilance, not forensic proof of fraud.

@@ -1,0 +1,479 @@
+{
+  "timestamp_utc": "2026-10-01T18:26:58.022898+00:00",
+  "dataset_source": "EMSCAD (Workable 2012-2014, Vidros et al.)",
+  "csv_path": "C:\\Users\\user\\Downloads\\Internship\\ScamCheck\\Scamcheck\\backend\\data\\external\\emscad\\fake_job_postings.csv",
+  "total_records_evaluated": 16201,
+  "deduplication_audit": {
+    "raw_records": 17880,
+    "unique_records": 16201,
+    "duplicate_instances_same_label": 1679,
+    "conflicting_label_groups": 0,
+    "conflicts": []
+  },
+  "class_distribution": {
+    "legitimate": 15480,
+    "scam": 721,
+    "imbalance_ratio": "21.5:1"
+  },
+  "isolation_audit": {
+    "synthetic_dataset_overlap": 0,
+    "evaluation_benchmark_overlap": 0
+  },
+  "majority_class_baseline": {
+    "accuracy": 0.9554965742855379,
+    "macro_f1": 0.4886209399955809,
+    "scam_metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 721
+    },
+    "legitimate_metrics": {
+      "precision": 0.9554965742855379,
+      "recall": 1.0,
+      "f1": 0.9772418799911619,
+      "support": 15480
+    },
+    "macro_avg": {
+      "precision": 0.47774828714276896,
+      "recall": 0.5,
+      "f1-score": 0.4886209399955809,
+      "support": 16201.0
+    },
+    "pr_auc": 0.04450342571446207,
+    "confusion_matrix": {
+      "true_legitimate_pred_legitimate_tn": 15480,
+      "true_legitimate_pred_scam_fp": 0,
+      "true_scam_pred_legitimate_fn": 721,
+      "true_scam_pred_scam_tp": 0,
+      "matrix_array": [
+        [
+          15480,
+          0
+        ],
+        [
+          721,
+          0
+        ]
+      ]
+    }
+  },
+  "models_evaluated": {
+    "scamcheck_char_lr_pipeline": {
+      "model_name": "scamcheck_char_lr_pipeline",
+      "metrics": {
+        "accuracy": 0.9508672304178755,
+        "macro_f1": 0.5753310745786833,
+        "scam_metrics": {
+          "precision": 0.3469387755102041,
+          "recall": 0.11789181692094314,
+          "f1": 0.17598343685300208,
+          "support": 721
+        },
+        "legitimate_metrics": {
+          "precision": 0.9601403860616696,
+          "recall": 0.9896640826873385,
+          "f1": 0.9746787123043644,
+          "support": 15480
+        },
+        "macro_avg": {
+          "precision": 0.6535395807859369,
+          "recall": 0.5537779498041409,
+          "f1-score": 0.5753310745786833,
+          "support": 16201.0
+        },
+        "pr_auc": 0.1486933744964069,
+        "confusion_matrix": {
+          "true_legitimate_pred_legitimate_tn": 15320,
+          "true_legitimate_pred_scam_fp": 160,
+          "true_scam_pred_legitimate_fn": 636,
+          "true_scam_pred_scam_tp": 85,
+          "matrix_array": [
+            [
+              15320,
+              160
+            ],
+            [
+              636,
+              85
+            ]
+          ]
+        }
+      },
+      "sample_false_positives": [
+        {
+          "job_id": "emscad_9313",
+          "title": "Job Title: INSTALLERS NEEDED",
+          "text_preview": "Job Title: INSTALLERS NEEDED\n\nDescription: <p>We need good techs with either Cable or Satellite experience.<br><br>We can train.\u00a0<br><br>Must have truck\u00a0<br><br>Start Today<br><br>Paid Mileage<br><br>...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5755899323789629
+        },
+        {
+          "job_id": "emscad_7723",
+          "title": "Job Title: Canvassers",
+          "text_preview": "Job Title: Canvassers\n\nDescription: <p>NOW HIRING - CANVASSING FOR HOME IMPROVEMENT (Ft. Collins )<br><br>Door to door canvassing for home improvement company. (Roofing, siding, gutters, etc.) Experie...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5558039868898255
+        },
+        {
+          "job_id": "emscad_2966",
+          "title": "Job Title: Community Manager - Intern",
+          "text_preview": "Job Title: Community Manager - Intern\n\nCompany Profile: <p>\u03a4\u03bf\u00a0#URL_bb79581a561837ad604b8fc4ab629753b36407cc3bc76c42e6e46d74bb78eba2#\u00a0\u03b5\u03af\u03bd\u03b1\u03b9 \u03bc\u03af\u03b1 \u03b5\u03c0\u03b1\u03b3\u03b3\u03b5\u03bb\u03bc\u03b1\u03c4\u03b9\u03ba\u03ae \u03b4\u03b9\u03b1\u03b4\u03b9\u03ba\u03c4\u03c5\u03b1\u03ba\u03ae \u03c0\u03bb\u03b1\u03c4\u03c6\u03cc\u03c1\u03bc\u03b1 \u03bc\u03ad\u03c3\u03c9 \u03c4\u03b7\u03c2 \u03bf\u03c0\u03bf\u03af\u03b1\u03c2 \u03ad\u03c1\u03c7\u03bf\u03bd...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5541472174950917
+        },
+        {
+          "job_id": "emscad_9278",
+          "title": "Job Title: Desktop Deployment Technician Level 3+",
+          "text_preview": "Job Title: Desktop Deployment Technician Level 3+\n\nCompany Profile: <h3></h3>\n<p>Valor Services provides Workforce Solutions that meet the needs of companies across the Private Sector, with a special ...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5510324725249576
+        },
+        {
+          "job_id": "emscad_3351",
+          "title": "Job Title: MBA Intern (Business Development)",
+          "text_preview": "Job Title: MBA Intern (Business Development)\n\nCompany Profile: <p>Daily Secret is one of the fastest growing digital media brand for premium audiences around the world, serving 1.8 million subscribers...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5494855249814156
+        },
+        {
+          "job_id": "emscad_1259",
+          "title": "Job Title: Customer Service/Office Leader",
+          "text_preview": "Job Title: Customer Service/Office Leader\n\nDescription: <p>We are looking for 1 Customer Service/Office Leader to help run and develop our ecommerce website business.\u00a0 The ideal candidate must be resp...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5420303445040642
+        },
+        {
+          "job_id": "emscad_16528",
+          "title": "Job Title: Health Coach",
+          "text_preview": "Job Title: Health Coach\n\nDescription: <p>Our office in Huntington Beach has just expanded and our company is growing globally so\u00a0 we're currently looking for healthy fitness minded people who would en...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5379675515383804
+        },
+        {
+          "job_id": "emscad_10229",
+          "title": "Job Title: Contract Remote Medical Billing Position",
+          "text_preview": "Job Title: Contract Remote Medical Billing Position\n\nCompany Profile: <p>Divine Medical Billing's core business is to provide medical billing services to practices of all sizes. Our goal is to simplif...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5368113880234439
+        },
+        {
+          "job_id": "emscad_3642",
+          "title": "Job Title: Intern (Marketing Analytics)",
+          "text_preview": "Job Title: Intern (Marketing Analytics)\n\nCompany Profile: <p>Daily Secret is one of the fastest growing digital media brand for premium audiences around the world, serving 1.8 million subscribers ever...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5355786905573904
+        },
+        {
+          "job_id": "emscad_12796",
+          "title": "Job Title: Sales Consultant NYC",
+          "text_preview": "Job Title: Sales Consultant NYC\n\nCompany Profile: <p>Sarbari is a high-growth, investment-backed software company. We provide the restaurant industry with exciting new solutions that help our customer...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5351653184870084
+        }
+      ],
+      "sample_false_negatives": [
+        {
+          "job_id": "emscad_17741",
+          "title": "Job Title: Intern Project Developer",
+          "text_preview": "Job Title: Intern Project Developer\n\nDescription: <p>We Are Looking for Interns for Project Development. You Will be responsible for gathering and arranging projects for the label and the network, suc...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.2936594751254914
+        },
+        {
+          "job_id": "emscad_7002",
+          "title": "Job Title: Project Engineer Molding   2020",
+          "text_preview": "Job Title: Project Engineer Molding   2020\n\nDescription: <p>2020</p>\n<p><b>Job Title:</b> Project Engineer Molding</p>\n<p><b>Role:</b> Engineering or Related</p>\n<p><b>Relocation Available:</b> Yes</p...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3047888416449302
+        },
+        {
+          "job_id": "emscad_17533",
+          "title": "Job Title: Quality Engineer",
+          "text_preview": "Job Title: Quality Engineer\n\nDescription: <p>Quality Assurance: 100% Employee Owned Windings, Inc.,<a href=\"#URL_792ccdbaed8f460921a3d6ee8d13f4080d562cdf6d04cd2ede4c0aef315109b3#\" target=\"_blank\">#URL...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3174393220455638
+        },
+        {
+          "job_id": "emscad_10849",
+          "title": "Job Title: Hiring for Senior SAP Solution Engineer",
+          "text_preview": "Job Title: Hiring for Senior SAP Solution Engineer\n\nDescription: <p>Position : Sr IT Solution Owner\u2014SAP<br>Job Type : Full Time<br>Job Location : United States-Washington\u2013Bellevue<br>Us work status re...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3206221398057161
+        },
+        {
+          "job_id": "emscad_5584",
+          "title": "Job Title: Structural Engineer",
+          "text_preview": "Job Title: Structural Engineer\n\nDescription: <p>Why Choose AECOM? <br>Imagine working for a truly global company whose 45,000 employees share a singular passion: to make the world a better place. We e...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3279219552410842
+        },
+        {
+          "job_id": "emscad_6685",
+          "title": "Job Title: CIVIL PROJECT ENGINEER",
+          "text_preview": "Job Title: CIVIL PROJECT ENGINEER\n\nDescription: <p>Job Responsibilities;</p>\n<p>The Project Engineer is responsible for everyday project activities, quality control and project delivery, overseeing al...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3337452704243077
+        },
+        {
+          "job_id": "emscad_17622",
+          "title": "Job Title: Data Entry",
+          "text_preview": "Job Title: Data Entry\n\nDescription: <p>The Data Entry Specialist is responsible for performing high volume data entry that includes tallying and proofing merchandise order forms.</p>\n\nRequirements: <p...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.33398820991445566
+        },
+        {
+          "job_id": "emscad_8445",
+          "title": "Job Title: DIVISION ELECTRICAL ENGINEER",
+          "text_preview": "Job Title: DIVISION ELECTRICAL ENGINEER\n\nDescription: <p>Responsibilities:<br><br>Electrical and project engineering work involving support of Gypsum divisional operations through design, troubleshoot...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.33616735801008024
+        },
+        {
+          "job_id": "emscad_10662",
+          "title": "Job Title: FEA Senior engineer",
+          "text_preview": "Job Title: FEA Senior engineer\n\nCompany Profile: <p>Aker Solutions is a global provider of products, systems and services to the oil and gas industry. Our engineering, design and technology bring disc...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.33624281556065433
+        },
+        {
+          "job_id": "emscad_17567",
+          "title": "Job Title: Trainer/Recuiter Specialist",
+          "text_preview": "Job Title: Trainer/Recuiter Specialist\n\nDescription: <p><b>We are a Health Benefits company. Helping people save money when they cant afford insurance.</b></p>\n<p><b>2 positons available.</b></p>\n<p><...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.33659625177777963
+        }
+      ],
+      "total_false_positives": 160,
+      "total_false_negatives": 636
+    },
+    "scamcheck_lr_pipeline": {
+      "model_name": "scamcheck_lr_pipeline",
+      "metrics": {
+        "accuracy": 0.9251898030985741,
+        "macro_f1": 0.5572483192420851,
+        "scam_metrics": {
+          "precision": 0.15471167369901548,
+          "recall": 0.15256588072122051,
+          "f1": 0.15363128491620112,
+          "support": 721
+        },
+        "legitimate_metrics": {
+          "precision": 0.9605551969012266,
+          "recall": 0.9611757105943153,
+          "f1": 0.960865353567969,
+          "support": 15480
+        },
+        "macro_avg": {
+          "precision": 0.557633435300121,
+          "recall": 0.5568707956577679,
+          "f1-score": 0.5572483192420851,
+          "support": 16201.0
+        },
+        "pr_auc": 0.14103537191022367,
+        "confusion_matrix": {
+          "true_legitimate_pred_legitimate_tn": 14879,
+          "true_legitimate_pred_scam_fp": 601,
+          "true_scam_pred_legitimate_fn": 611,
+          "true_scam_pred_scam_tp": 110,
+          "matrix_array": [
+            [
+              14879,
+              601
+            ],
+            [
+              611,
+              110
+            ]
+          ]
+        }
+      },
+      "sample_false_positives": [
+        {
+          "job_id": "emscad_15402",
+          "title": "Job Title: Male Extras - Shortland St",
+          "text_preview": "Job Title: Male Extras - Shortland St\n\nCompany Profile: <p>The Online Talent Booking Agency.</p>\n\nDescription: <p>Background Talent work on Shortland St production.</p>\n<p>No experience required - No ...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5636376549560859
+        },
+        {
+          "job_id": "emscad_9313",
+          "title": "Job Title: INSTALLERS NEEDED",
+          "text_preview": "Job Title: INSTALLERS NEEDED\n\nDescription: <p>We need good techs with either Cable or Satellite experience.<br><br>We can train.\u00a0<br><br>Must have truck\u00a0<br><br>Start Today<br><br>Paid Mileage<br><br>...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.563434452668167
+        },
+        {
+          "job_id": "emscad_11074",
+          "title": "Job Title: Front-End Developer",
+          "text_preview": "Job Title: Front-End Developer\n\nCompany Profile: <p>Wanderio \u00e8 una startup nata con l\u2019intento di <b>semplificare</b> l\u2019esperienza di pianificazione del viaggio, fornendo all\u2019utente la possibilit\u00e0 di p...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5582724774473724
+        },
+        {
+          "job_id": "emscad_11773",
+          "title": "Job Title: Graduate Salesforce Administrator",
+          "text_preview": "Job Title: Graduate Salesforce Administrator\n\nCompany Profile: <p>NOW: Pensions is a UK based multi-employer trust serving thousands of employers and hundreds of thousands of employees from a wide ran...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.557921211249609
+        },
+        {
+          "job_id": "emscad_11407",
+          "title": "Job Title: Caregiver's and CNA's needed ASAP",
+          "text_preview": "Job Title: Caregiver's and CNA's needed ASAP\n\nDescription: <p>Local agency looking to hire part-time, full-time and respite caregivers.</p>\n<p></p>\n\nRequirements: <p>Position requirements:</p>\n<p>CPR ...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5489352324670158
+        },
+        {
+          "job_id": "emscad_4661",
+          "title": "Job Title: MSBI Architect with Tableau",
+          "text_preview": "Job Title: MSBI Architect with Tableau\n\nDescription: <p><b>MSBI Architect with Tableau</b></p>\n<p><b>FTE /CTH</b></p>\n<p><b>CTH - Rate - $45 - $47/hr -1099/C2C</b></p>\n<p><b>Location \u2013 Phoenix AZ</b><...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5480846057298274
+        },
+        {
+          "job_id": "emscad_1534",
+          "title": "Job Title: Outbound Call Centre Operative",
+          "text_preview": "Job Title: Outbound Call Centre Operative\n\nDescription: <p><b>You will be making high volumes of outbound calls in our lively fast paced offices, booking appointments for the field sales agents to go ...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5465226357805223
+        },
+        {
+          "job_id": "emscad_4192",
+          "title": "Job Title: Sales Executive",
+          "text_preview": "Job Title: Sales Executive\n\nCompany Profile: <p>\u0388\u03c7\u03bf\u03c5\u03bc\u03b5 \u03ad\u03bd\u03b1\u03bd \u03ba\u03b1\u03b9 \u03bc\u03bf\u03bd\u03b1\u03b4\u03b9\u03ba\u03cc \u03c3\u03ba\u03bf\u03c0\u03cc. To \u039dowDoctor \u03bd\u03b1 \u03b3\u03af\u03bd\u03b5\u03b9 \u03c4\u03bf \u03bc\u03b5\u03b3\u03b1\u03bb\u03cd\u03c4\u03b5\u03c1\u03bf site \u03b5\u03cd\u03c1\u03b5\u03c3\u03b7\u03c2 \u03b3\u03b9\u03b1\u03c4\u03c1\u03ce\u03bd \u03ba\u03b1\u03b9 \u03b5\u03c0\u03b1\u03b3\u03b3\u03b5\u03bb\u03bc\u03b1\u03c4\u03b9\u03ce\u03bd \u03c5\u03b3\u03b5\u03af\u03b1\u03c2 \u03c3\u03c4\u03b7\u03bd \u0395\u03bb\u03bb\u03ac\u03b4\u03b1 \u03bc\u03b5 \u03b2\u03ac\u03c3\u03b7 \u03b1) \u03c4\u03b7\u03bd \u03b3\u03b5\u03c9\u03b3\u03c1\u03b1\u03c6\u03b9\u03ba\u03ae ...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5453809900120186
+        },
+        {
+          "job_id": "emscad_472",
+          "title": "Job Title: Account Manager",
+          "text_preview": "Job Title: Account Manager\n\nDescription: <p>We are looking for a part time account manager to educate and sell wedding vendors our bridal shows, online ads, and exposure in our wedding resource center...",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5451716181122663
+        },
+        {
+          "job_id": "emscad_7116",
+          "title": "Job Title: CLASS A TRUCK DRIVERS",
+          "text_preview": "Job Title: CLASS A TRUCK DRIVERS\n\nDescription: <p>Looking to hire 3-4 Class A truck drivers, must have a minimum 2 years experience.</p>\n\nRequirements: <p>2 years driving</p>",
+          "true_label": "legitimate",
+          "predicted_label": "scam",
+          "p_scam": 0.5439137598288887
+        }
+      ],
+      "sample_false_negatives": [
+        {
+          "job_id": "emscad_1204",
+          "title": "Job Title: Health + Environmental Professional",
+          "text_preview": "Job Title: Health + Environmental Professional\n\nCompany Profile: <p></p>\n<p><img src=\"#URL_11c32ff69355e3902a0e5001e3cbd12a232bc8d3f22800fe446045a812985210#\"></p>\n<p>Macpherson Oil and Refined Resourc...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3545555669995744
+        },
+        {
+          "job_id": "emscad_8488",
+          "title": "Job Title: UTC Lead Testing Technician",
+          "text_preview": "Job Title: UTC Lead Testing Technician\n\nCompany Profile: <p>Jaco Oil and Refined Resources have partnered up in an effort to streamline the hiring process and provide a more efficient and effective re...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.35650490621739594
+        },
+        {
+          "job_id": "emscad_7484",
+          "title": "Job Title: Registered Nurse",
+          "text_preview": "Job Title: Registered Nurse\n\nDescription: <p>Apply using below link</p>\n<p><a>#URL_1fbc0e83fbdcb56ecae18af2629a0fe573083188832dffccbae88abd5e7d129f#</a></p>\n<p><a href=\"#URL_1fbc0e83fbdcb56ecae18af262...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.35860924983408804
+        },
+        {
+          "job_id": "emscad_628",
+          "title": "Job Title: UST Testing Technician II",
+          "text_preview": "Job Title: UST Testing Technician II\n\nCompany Profile: <p>Jaco Oil and Refined Resources have partnered up in an effort to streamline the hiring process and provide a more efficient and effective recr...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3591700494062288
+        },
+        {
+          "job_id": "emscad_5838",
+          "title": "Job Title: UST Testing Technician III",
+          "text_preview": "Job Title: UST Testing Technician III\n\nCompany Profile: <p>Jaco Oil and Refined Resources have partnered up in an effort to streamline the hiring process and provide a more efficient and effective rec...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.35943207372811875
+        },
+        {
+          "job_id": "emscad_144",
+          "title": "Job Title: Forward Cap.",
+          "text_preview": "Job Title: Forward Cap.\n\nDescription: <p>The group has raised a fund for the purchase of homes in the Southeast. The student on this project will help them build their investments from the ground up a...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.36148405079774576
+        },
+        {
+          "job_id": "emscad_17727",
+          "title": "Job Title: Front Desk Receptionist Professional",
+          "text_preview": "Job Title: Front Desk Receptionist Professional\n\nDescription: <p>You will be responsible for greeting clients, managing the front office functions,\u00a0maintaining supply inventory, and general office dut...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3618256364305215
+        },
+        {
+          "job_id": "emscad_2969",
+          "title": "Job Title: Strategic Sourcing Engineer   2053",
+          "text_preview": "Job Title: Strategic Sourcing Engineer   2053\n\nDescription: <p>2053</p>\n<p><b>Job Title:</b> Strategic Sourcing Engineer</p>\n<p><b>Role:</b> Engineering or Related</p>\n<p><b>Relocation Available:</b> ...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.3618395994366081
+        },
+        {
+          "job_id": "emscad_17829",
+          "title": "Job Title: Android Developer",
+          "text_preview": "Job Title: Android Developer\n\nDescription: <p>inFullMobile Sp. z o.o. is a mobile software development house, specializing in the client side of mobile software for clients all around the globe. We ar...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.364249620919018
+        },
+        {
+          "job_id": "emscad_7002",
+          "title": "Job Title: Project Engineer Molding   2020",
+          "text_preview": "Job Title: Project Engineer Molding   2020\n\nDescription: <p>2020</p>\n<p><b>Job Title:</b> Project Engineer Molding</p>\n<p><b>Role:</b> Engineering or Related</p>\n<p><b>Relocation Available:</b> Yes</p...",
+          "true_label": "scam",
+          "predicted_label": "legitimate",
+          "p_scam": 0.36578138574705993
+        }
+      ],
+      "total_false_positives": 601,
+      "total_false_negatives": 611
+    }
+  }
+}
