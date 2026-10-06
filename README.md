@@ -31,7 +31,7 @@ Digital deception, including SMS smishing, fake job offers, and high-yield inves
 The application is deployed live on Vercel:
 
 - **Live URL:** [https://scam-check1.vercel.app/](https://scam-check1.vercel.app/)
-- **Interactive API Documentation:** [https://scam-check-eight.vercel.app/docs](https://scam-check-eight.vercel.app/docs)
+- **Interactive API Documentation:** [https://scam-check-eight.vercel.app/docs](https://scam-check1.vercel.app/docs)
 
 *Note: The live service relies on the deployed serverless backend API being reachable.*
 
