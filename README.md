@@ -3,7 +3,7 @@
 > **Digital Safety, Made Simple.**  
 > An explainable, text-only decision-support tool for identifying potential warning signs in suspicious messages and providing clear safety guidance.
 
-[![Live Application](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat&logo=vercel)](https://scam-check-eight.vercel.app/)
+[![Live Application](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat&logo=vercel)](https://scam-check1.vercel.app)
 [![Frontend](https://img.shields.io/badge/Frontend-React%2019%20%2B%20Vite-61DAFB?style=flat&logo=react)](https://react.dev/)
 [![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Pydantic-009688?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Tests](https://img.shields.io/badge/Tests-88%20Passed-brightgreen?style=flat&logo=pytest)](backend/tests/)
